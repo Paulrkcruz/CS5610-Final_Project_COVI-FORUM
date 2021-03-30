@@ -1,17 +1,14 @@
 const expressServer = require("./server");
-const config = require("./config/config");
-const mongoClient = require("./config/mongoClient");
-
+const config = require("./configs/config");
+const mongoClient = require("./configs/mongoClient");
+// Connect to Mongo DB Server
 let server;
-
-// On startup make connection with the mongo db
 mongoClient.initConnection().then(() => {
   server = expressServer.listen(config.port, () => {
     console.info(`Listening to port ${config.port}`);
   });
 });
-
-// On unexpected error correctly close the server
+// Error handling
 const exitHandler = () => {
   if (server) {
     server.close(() => {

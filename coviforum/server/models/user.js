@@ -1,5 +1,5 @@
 const { v4: uuidv4 } = require("uuid");
-
+// User class
 class User {
   constructor(name, hashed_password, email) {
     this.name = name;
@@ -10,6 +10,7 @@ class User {
     this.active = 1;
     this.id = uuidv4();
   }
+  // Read json
   static from(json) {
     const u = new User();
     return Object.assign(u, json);

@@ -3,43 +3,32 @@ const mongoSanitize = require("express-mongo-sanitize");
 const compression = require("compression");
 const cors = require("cors");
 const httpStatus = require("http-status");
-
-// routes
+// Routes
 const accountRoute = require("./routes/account.route");
-const threadRoute = require("./routes/thread.route");
+const boardRoute = require("./routes/board.route");
 const locationRoute = require("./routes/location.route");
 
-// Express app
+// Express server
 const app = express();
 
-// enable cors
+// Activate utilities
 app.use(cors());
-
-// parse json request body
 app.use(express.json());
-
-// parse urlencoded request body
 app.use(express.urlencoded({ extended: true }));
-
-// sanitize request data
 app.use(mongoSanitize());
-
-// gzip compression
 app.use(compression());
 
-// Default route
+// Define Default Path
 app.get("/", (req, res) => {
-  res.send("Hello from form api");
+  res.send("> API running..");
 });
-
-// user api requests
 app.use("/accounts", accountRoute);
-app.use("/thread", threadRoute);
+app.use("/board", boardRoute);
 app.use("/location", locationRoute);
 
 // posts api requests
 
-// threads api requests
+// boards api requests
 
 // send back a 404 error for any unknown api request
 app.use((req, res, next) => {
