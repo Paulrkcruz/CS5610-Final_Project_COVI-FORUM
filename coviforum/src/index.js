@@ -6,11 +6,11 @@ import { Switch, Route, HashRouter as Router } from "react-router-dom";
 // Services
 import { getUser } from "./services/user.service";
 // Pages
-import Feed from "./pages/mainboard";
-import Thread from "./pages/board";
+import Mainboard from "./pages/mainboard";
+import Board from "./pages/board";
 import NotFound from "./pages/search-results";
-import NewThread from "./pages/new-board";
-import Authenticate from "./pages/authenticatione";
+import NewBoard from "./pages/new-board";
+import Authenticate from "./pages/authentication";
 // Components
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -25,12 +25,11 @@ ReactDOM.render(
       <Header />
       <div role="main" id="forum-body" className="forum-body">
         <Switch>
-          <Route exact path="/" component={Feed} />
-          <Route path="/stats" component={Stats} />
-          <AuthenticatedRoute path="/board/new_board" component={NewThread} />
-          <Route path="/board/:board" component={Thread} />
-          <Route path="/login" component={Authenticate} />
-          <Route path="*" component={NotFound} />
+          <Route exact path="/" component={main} />
+          <AuthenticatedRoute path="/board/new-board" component={newBoard} />
+          <Route path="/board/:board" component={Board} />
+          <Route path="/login" component={Authentication} />
+          <Route path="*" component={SearchResults} />
         </Switch>
       </div>
       <Footer />

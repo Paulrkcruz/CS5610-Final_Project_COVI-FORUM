@@ -98,4 +98,4 @@ const NewBoard = (props) => {
   );
 };
 
-export default withRouter(NewBoard);
+export default withRouter(newBoard);
