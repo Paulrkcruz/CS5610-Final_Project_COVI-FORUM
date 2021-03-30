@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/coviforum/static/css/main.da42761a.chunk.css",
+    "main.js": "/coviforum/static/js/main.f41b2af9.chunk.js",
+    "main.js.map": "/coviforum/static/js/main.f41b2af9.chunk.js.map",
+    "runtime-main.js": "/coviforum/static/js/runtime-main.88d72b90.js",
+    "runtime-main.js.map": "/coviforum/static/js/runtime-main.88d72b90.js.map",
+    "xlsx.js": "/coviforum/static/js/xlsx.49eab742.chunk.js",
+    "xlsx.js.map": "/coviforum/static/js/xlsx.49eab742.chunk.js.map",
+    "static/js/3.631372c5.chunk.js": "/coviforum/static/js/3.631372c5.chunk.js",
+    "static/js/3.631372c5.chunk.js.map": "/coviforum/static/js/3.631372c5.chunk.js.map",
+    "static/js/4.2904235c.chunk.js": "/coviforum/static/js/4.2904235c.chunk.js",
+    "static/js/4.2904235c.chunk.js.map": "/coviforum/static/js/4.2904235c.chunk.js.map",
+    "static/js/5.29ccdf28.chunk.js": "/coviforum/static/js/5.29ccdf28.chunk.js",
+    "static/js/5.29ccdf28.chunk.js.map": "/coviforum/static/js/5.29ccdf28.chunk.js.map",
+    "static/css/6.570e41f7.chunk.css": "/coviforum/static/css/6.570e41f7.chunk.css",
+    "static/js/6.dd6f13b4.chunk.js": "/coviforum/static/js/6.dd6f13b4.chunk.js",
+    "static/js/6.dd6f13b4.chunk.js.map": "/coviforum/static/js/6.dd6f13b4.chunk.js.map",
+    "static/js/7.cb49ab75.chunk.js": "/coviforum/static/js/7.cb49ab75.chunk.js",
+    "static/js/7.cb49ab75.chunk.js.map": "/coviforum/static/js/7.cb49ab75.chunk.js.map",
+    "static/js/8.fa65512b.chunk.js": "/coviforum/static/js/8.fa65512b.chunk.js",
+    "static/js/8.fa65512b.chunk.js.map": "/coviforum/static/js/8.fa65512b.chunk.js.map",
+    "index.html": "/coviforum/index.html",
+    "precache-manifest.78cc2a2982300723f485cdcfab4ce93a.js": "/coviforum/precache-manifest.78cc2a2982300723f485cdcfab4ce93a.js",
+    "service-worker.js": "/coviforum/service-worker.js",
+    "static/css/6.570e41f7.chunk.css.map": "/coviforum/static/css/6.570e41f7.chunk.css.map",
+    "static/css/main.da42761a.chunk.css.map": "/coviforum/static/css/main.da42761a.chunk.css.map",
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88d72b90.js",
+    "static/js/3.631372c5.chunk.js",
+    "static/css/main.da42761a.chunk.css",
+    "static/js/main.f41b2af9.chunk.js"
+  ]
+}

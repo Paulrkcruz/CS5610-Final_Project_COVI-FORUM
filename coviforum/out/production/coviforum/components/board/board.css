@@ -1,0 +1,73 @@
+.board {
+  text-decoration: none;
+  color: black;
+  flex-direction: column;
+}
+
+.board .container {
+  width: calc(100% - 66px);
+  position: relative;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  padding: 25px;
+  margin: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board .container .vertical-centering {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.board .container .content {
+  width: 80%;
+  margin-left: 25px;
+}
+
+.board .container .content .subject {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.board .container .content .subject h1 {
+  font-size: 23px;
+}
+
+a.board .container .content .subject h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 23px;
+}
+
+.board .container .content .date {
+  font-size: 14px;
+  margin-top: -15px;
+}
+
+.board .container .content .tags {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.board .container .content .tags span {
+  margin-right: 5px;
+  color: white;
+  background-color: #4f5d75;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.board .container .comments > p {
+  text-align: center;
+}
+
+a.board .container .content .message p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}

@@ -29,8 +29,8 @@ const mongoDb = (uri, dbName) => {
 const initConnection = () => {
   return new Promise((resolve) => {
     const uri = config.mongo.uri;
-    // connect to our forum DB
-    mongoDb(uri, "coviforum").then((db) => {
+    // connect to DB
+    mongoDb(uri, "coviforum-boards").then((db) => {
       database = db;
       resolve();
     });

@@ -1,0 +1,77 @@
+.authentication {
+  height: calc(100vh - 52px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.authentication > button {
+  position: absolute;
+  top: 0;
+}
+
+.authentication .container {
+  width: 500px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  padding: 25px;
+  margin: 13px;
+  display: flex;
+  flex-direction: column;
+}
+.authentication .container > div:not(.top-right-corner) {
+  display: flex;
+  margin: 15px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.authentication .container label {
+  width: 150px;
+  display: flex;
+}
+.authentication .container input {
+  width: calc(100% - 150px);
+  display: flex;
+  padding: 15px;
+  border-color: #4f5d75;
+  border-width: 1px;
+}
+.authentication .container button {
+  width: 150px;
+  padding: 15px;
+  background-color: #4f5d75;
+  color: white;
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.authentication .container .error {
+  margin: 0;
+  color: #e64b40;
+}
+
+.authentication .top-right-corner {
+  position: absolute;
+  background-color: #4f5d75;
+  color: white;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}

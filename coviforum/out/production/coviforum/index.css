@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+ font-family: "Times New Roman", Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #6495ED;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Times New Roman",
+    monospace;
+}
+
+.coviforum-body {
+  padding-top: 45px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
