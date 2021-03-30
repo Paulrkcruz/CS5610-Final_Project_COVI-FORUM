@@ -15,7 +15,7 @@ import Authenticate from "./pages/authentication";
 import Header from "./components/header";
 import Footer from "./components/footer";
 // Authenticated Routes
-import AuthenticatedRoute from "./components/authentications";
+import AuthenticatedRoute from "./components/Authentications";
 // Load user from cache
 // SOURCE: https://www.npmjs.com/package/react-use-cache
 getUser();
@@ -26,10 +26,10 @@ ReactDOM.render(
       <div role="main" id="forum-body" className="forum-body">
         <Switch>
           <Route exact path="/" component={main} />
-          <AuthenticatedRoute path="./board/new-board" component={newBoard} />
-          <Route path="/board/:board" component={Board} />
-          <Route path="/login" component={Authentication} />
-          <Route path="*" component={SearchResults} />
+          <AuthenticatedRoute path="./pages/new-board" component={NewBoard} />
+          <Route path="./pages/board/board" component={Board} />
+          <Route path="/login" component={Authentications} />
+          <Route path="./pages/search-results" component={SearchResults} />
         </Switch>
       </div>
       <Footer />
