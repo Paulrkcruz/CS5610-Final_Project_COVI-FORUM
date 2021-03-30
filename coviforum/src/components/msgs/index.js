@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./msgs.css";
+import "./msg.css";
 import {
   convertDate,
   getRandomBackgroundColor,

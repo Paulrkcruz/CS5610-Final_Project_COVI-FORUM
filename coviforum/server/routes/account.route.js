@@ -1,7 +1,7 @@
 const helper = require("./helper");
 const express = require("express");
 const userController = require("../controllers/user.controller");
-const threadController = require("../controllers/thread.controller");
+const boardController = require("../controllers/board.controller");
 const User = require("../models/user");
 const router = express.Router();
 // SOURCE: https://dev.to/anilsingh/create-use-helper-functions-react-component-1jhj
@@ -12,8 +12,8 @@ const getStats = async (req, res) => {
 // Access db
   const promises = [
     userController.getAmountOfUsers(),
-    threadController.getAmountOfBoards(),
-    threadController.getAmountOfMsgs(),
+    boardController.getAmountOfBoards(),
+    boardController.getAmountOfMsgs(),
   ];
   try {
     const result = await Promise.all(promises);
@@ -36,7 +36,7 @@ const getStats = async (req, res) => {
   }
 };
 
-/SignUp
+
 const register = (req, res) => {
   if (req && req.body) {
     if (!req.body.name || !req.body.email || !req.body.hashed_password) {

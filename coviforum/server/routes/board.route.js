@@ -2,7 +2,7 @@ const express = require("express");
 const boardController = require("../controllers/board.controller");
 const locationController = require("../controllers/location.controller");
 const Board = require("../models/board");
-const Post = require("../models/post");
+const Post = require("../models/msgs");
 const router = express.Router();
 const helper = require("./helper");
 

@@ -1,39 +1,44 @@
-// Setup environment for Express Server
 const fs = require("fs");
-let environment =
-  process.argv.indexOf("-environment") === -1
-    ? process.environment["ENV"] || "localhost"
-    : process.argv[process.argv.indexOf("-environment") + 1];
+
+// Get environment
+let env =
+  process.argv.indexOf("-env") === -1
+    ? process.env["ENV"] || "localhost"
+    : process.argv[process.argv.indexOf("-env") + 1];
 
 // read config file when developing
 let configJson = {};
-if (environment === "localhost") {
+if (env === "localhost") {
   try {
     // Get current folder
     configJson = JSON.parse(
       fs.readFileSync(__dirname + "/config.json").toString()
     );
   } catch (err) {
-    console.warn("No config.json exists.");
+    console.warn("No config.json file was found for this repository");
   }
 } else {
+  // use env variables when on deploy server
   let port =
     process.argv.indexOf("-port") === -1
-      ? process.environment["PORT"] || "3000"
+      ? process.env["PORT"] || "3000"
       : process.argv[process.argv.indexOf("-port") + 1];
   let uri =
     process.argv.indexOf("-uri") === -1
-      ? process.environment["URI"] || ""
+      ? process.env["URI"] || ""
       : process.argv[process.argv.indexOf("-uri") + 1];
 
-  configJson[environment] = {
+  configJson[env] = {
     port,
     mongo: {
       uri,
     },
   };
 }
-// Setup configuration environment
-let environmentConfig = configJson[environment] || {};
-environmentConfig["environment"] = environment;
-module.exports = environmentConfig;
+
+// Set env config
+let envConfig = configJson[env] || {};
+envConfig["env"] = env;
+
+// Export the config
+module.exports = envConfig;

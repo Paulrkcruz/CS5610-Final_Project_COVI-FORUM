@@ -1,24 +1,24 @@
-.post-list {
+.msg-list {
   width: 75%;
 }
 
-.thread .content {
+.board .content {
   position: relative;
 }
 
-.thread .aside {
+.board .aside {
   position: absolute;
   right: 0;
   top: 0;
   width: 22%;
 }
 
-.thread .aside button {
+.board .aside button {
   text-decoration: none;
   color: black;
 }
 
-.thread .aside .create-new-post {
+.board .aside .create-new-msg {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -34,18 +34,18 @@
 
 /* Pagination */
 
-.thread .pagination {
+.board .pagination {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 13px;
 }
 
-.thread .previous {
+.board .previous {
   margin-right: 0;
 }
 
-.thread .pagination li a {
+.board .pagination li a {
   margin-right: 13px;
   height: 30px;
   background-color: transparent;
@@ -57,11 +57,11 @@
   padding: 3px 13px;
 }
 
-.thread .pagination .pagination__link--active a {
+.board .pagination .pagination__link--active a {
   background-color: #4f5d75;
   color: white;
 }
-.thread .pagination .pagination__link--disabled a {
+.board .pagination .pagination__link--disabled a {
   border: #b1b1b1 solid 1px;
   color: #b1b1b1;
 }
