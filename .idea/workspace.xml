@@ -5,34 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coviforum/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/coviforum/coviforum/CoviforumApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/coviforum/coviforum/CoviforumApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/coviforum.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/coviforum_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dashboard/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Preferences/Preferences.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/authenticated-route/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/page-head/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/search-bar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/search-bar/search-bar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sign-up/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/thread-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/home-screen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/thread.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/cookie.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/user.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/useToken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home-screen.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +62,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -74,8 +87,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/models" />
+      <recent name="$PROJECT_DIR$/src/services" />
+      <recent name="$PROJECT_DIR$/src/actions" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -107,6 +131,9 @@
       <updated>1616883753704</updated>
       <workItem from="1616883759220" duration="574000" />
       <workItem from="1616886065988" duration="1761000" />
+      <workItem from="1617127699969" duration="870000" />
+      <workItem from="1617132368043" duration="9000" />
+      <workItem from="1617135167567" duration="4299000" />
     </task>
     <servers />
   </component>
