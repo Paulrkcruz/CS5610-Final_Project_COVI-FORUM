@@ -1,12 +1,12 @@
 import React from "react";
-import Thread from "../../models/thread";
+import Thread from "../../components/thread";
 
 function ThreadList(props) {
   const threads = props.threads;
   const listItems = threads.map((thread) => (
     <Thread
       titleOfPage={false}
-      clickable={true}
+      clickable={true}s
       key={thread.id}
       thread={thread}
     />

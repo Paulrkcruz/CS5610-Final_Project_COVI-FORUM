@@ -1,0 +1,69 @@
+.auth-container {
+  height: calc(100vh - 52px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.auth-container > button {
+  position: absolute;
+  top: 0;
+}
+
+.auth-container .container {
+  width: 500px;
+  position: relative;
+  background-color: white;
+  padding: 25px;
+  margin: 13px;
+}
+.auth-container .container > div:not(.top-right-corner) {
+  display: flex;
+  margin: 15px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+}
+
+.auth-container .container label {
+  width: 150px;
+  display: flex;
+}
+.auth-container .container input {
+  width: calc(100% - 150px);
+  display: flex;
+  padding: 15px;
+  border-color: #4f5d75;
+  border-width: 1px;
+}
+.auth-container .container button {
+  width: 150px;
+  background-color: blue;
+  color: white;
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.auth-container .container .error {
+  margin: 0;
+  color: green;
+}
+
+.auth-container .top-right-corner {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}

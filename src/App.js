@@ -11,6 +11,9 @@ import AuthenticatedRoute from "./components/authenticated-route";
 import * as serviceWorker from "./serviceWorker";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import HomeScreen from "./models/home-screen";
+import Thread from "./components/thread";
+
 // Load cached user
 getUser();
 
