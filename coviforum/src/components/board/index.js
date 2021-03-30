@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./board.css";
 import { Link } from "react-router-dom";
-import { convertDateToFromNow } from "../../service/helper";
+import { convertDateToFromNow } from "../../services/helper";
 // Board
 // Defines a message board
 const Board = (props) => {

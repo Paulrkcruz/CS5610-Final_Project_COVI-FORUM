@@ -8,9 +8,9 @@ import { getUser } from "./services/user.service";
 // Pages
 import Mainboard from "./pages/mainboard";
 import Board from "./pages/board";
-import NotFound from "./pages/search-results";
+import SearchResults from "./pages/search-results";
 import NewBoard from "./pages/new-board";
-import Authenticate from "./pages/authentication";
+import Authentication from "./pages/authentication";
 // Components
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -23,12 +23,12 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <div role="main" id="forum-body" className="forum-body">
+      <div role="Mainboard" id="forum-body" className="forum-body">
         <Switch>
-          <Route exact path="/" component={main} />
+          <Route exact path="/" component={Mainboard} />
           <AuthenticatedRoute path="./pages/new-board" component={NewBoard} />
           <Route path="./pages/board/board" component={Board} />
-          <Route path="/login" component={Authentications} />
+          <Route path="/login" component={Authentication} />
           <Route path="./pages/search-results" component={SearchResults} />
         </Switch>
       </div>

@@ -74,7 +74,7 @@ const Mainboard = (props) => {
   };
   return (
   // Setup main board page
-    <div className="mainBoard">
+    <div className="Mainboard">
       <PageHead className="title" title="Home" />
 // Container for main page
       <div className="container">
