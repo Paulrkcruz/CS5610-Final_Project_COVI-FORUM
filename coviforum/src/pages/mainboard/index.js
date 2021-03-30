@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./mainboard.css";
-import { getAllBoards, searchAllBoards } from "./board";
+import { getAllBoards, searchAllBoards } from "../../board";
 import BoardList from "../../components/board-msgs";
 import Loader from "react-loader-spinner";
 import PageHead from "../../components/header-view";

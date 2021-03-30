@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./new-board.css";
-import { addBoard } from "./board";
+import { addBoard } from "../../board";
 import { withRouter, Redirect } from "react-router-dom";
 import TagsInput from "react-tagsinput";
 // SOURCE-Click Handler: https://reactjs.org/docs/handling-events.html

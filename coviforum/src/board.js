@@ -1,6 +1,6 @@
 import axios from "axios";
-import env from "../environment";
-import { currentUser } from "../service/user.service";
+import env from "./environment";
+import { currentUser } from "./services/user.service";
 
 export const getAllBoards = () => {
   return axios.get(env[process.env.NODE_ENV].api + "/board/all");

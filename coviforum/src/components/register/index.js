@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { RegisterUser } from "./user";
+import { registerUser } from "../../user";
 import sha256 from "crypto-js/sha256";
 // Source: https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications
 
@@ -20,7 +20,7 @@ const Register = (props) => {
       hashed_password: password,
     };
 // User sign in
-    RegisterUser(payload)
+    registerUser(payload)
       .then((response) => {
         if (response.status === 200) {
           props.success(response.data);
@@ -40,7 +40,7 @@ const Register = (props) => {
       <div onClick={props.changeMode} className="top-right-corner">
         Sign-in
       </div>
-      <h1>Sign-up</h1>
+      <h1>Register</h1>
 
       <div>
         <label htmlFor="name">Username: </label>

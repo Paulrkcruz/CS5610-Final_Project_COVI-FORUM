@@ -15,7 +15,7 @@ import Authentication from "./pages/authentication";
 import Header from "./components/header";
 import Footer from "./components/footer";
 // Authenticated Routes
-import AuthenticatedRoute from "./components/Authentications";
+import AuthenticatedRoute from "./components/authentications";
 // Load user from cache
 // SOURCE: https://www.npmjs.com/package/react-use-cache
 getUser();

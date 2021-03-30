@@ -1,24 +1,16 @@
 import axios from "axios";
-import env from "../config/env";
-
-// Api call to get all users from the database
-// mostly used for debugging and admin purposes
-// Get env api -> production: deployed database
-// development -> localhost database
-export const getUserStats = () => {
-  return axios.get(env[process.env.NODE_ENV].api + "/accounts/stats");
-};
+import environment from "../";
 
 export const signInUser = (payload) => {
   return axios.post(
-    env[process.env.NODE_ENV].api + "/accounts/signin",
+    environment[process.env.NODE_ENV].api + "/accounts/login",
     payload
   );
 };
 
-export const signUpUser = (payload) => {
+export const registerUser = (payload) => {
   return axios.post(
-    env[process.env.NODE_ENV].api + "/accounts/signup",
+    environment[process.environment.NODE_ENV].api + "/accounts/signup",
     payload
   );
 };
