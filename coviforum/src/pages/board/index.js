@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./board.css";
 import { withRouter, Redirect } from "react-router-dom";
-import { getBoard } from "../../board";
+import { getBoard } from "./board";
 import Loader from "react-loader-spinner";
 import MsgList from "../../components/board-msgs";
 import NewMsg from "../../components/msgs";

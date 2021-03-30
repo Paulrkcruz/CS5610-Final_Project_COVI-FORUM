@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./new-board.css";
-import { addBoard } from "../../board";
+import { addBoard } from "./board";
 import { withRouter, Redirect } from "react-router-dom";
 import TagsInput from "react-tagsinput";
 // SOURCE-Click Handler: https://reactjs.org/docs/handling-events.html
@@ -17,7 +17,7 @@ const NewBoard = (props) => {
 // SEE source-this has a bug
   const handleClick = () => {
     if (subject === "" || message === "") {
-      setError("All fields must be complete.");
+      setError("All fields must be filled to continue. Please try again.");
       return;
     }
     var payload = {
@@ -98,4 +98,4 @@ const NewBoard = (props) => {
   );
 };
 
-export default withRouter(newBoard);
+export default withRouter(NewBoard);

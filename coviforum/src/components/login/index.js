@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { loginUser } from "../../user";
+import { loginUser } from "./user";
 import sha256 from "crypto-js/sha256";
 // Login Msg Board
 const Login = (props) => {

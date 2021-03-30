@@ -36,7 +36,7 @@ const getStats = async (req, res) => {
   }
 };
 
-/Signup
+/SignUp
 const register = (req, res) => {
   if (req && req.body) {
     if (!req.body.name || !req.body.email || !req.body.hashed_password) {

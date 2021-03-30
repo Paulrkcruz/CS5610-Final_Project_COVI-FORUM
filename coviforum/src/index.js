@@ -26,7 +26,7 @@ ReactDOM.render(
       <div role="main" id="forum-body" className="forum-body">
         <Switch>
           <Route exact path="/" component={main} />
-          <AuthenticatedRoute path="/board/new-board" component={newBoard} />
+          <AuthenticatedRoute path="./board/new-board" component={newBoard} />
           <Route path="/board/:board" component={Board} />
           <Route path="/login" component={Authentication} />
           <Route path="*" component={SearchResults} />

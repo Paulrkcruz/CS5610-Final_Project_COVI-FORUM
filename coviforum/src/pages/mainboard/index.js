@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./mainBoard.css";
-import { getAllBoards, searchAllBoards } from "../../board";
-import ThreadList from "../../components/board-msgs";
+import "./mainboard.css";
+import { getAllBoards, searchAllBoards } from "./board";
+import BoardList from "../../components/board-msgs";
 import Loader from "react-loader-spinner";
 import PageHead from "../../components/header-view";
 import { Link } from "react-router-dom";
@@ -96,7 +96,7 @@ const Mainboard = (props) => {
                 disabledClassName={"pagination__link--disabled"}
                 activeClassName={"pagination__link--active"}
               />
-              <ThreadList boards={visibleBoards} />
+              <BoardList boards={visibleBoards} />
               <ReactPaginate
                 previousLabel={"← Previous"}
                 nextLabel={"Next →"}
