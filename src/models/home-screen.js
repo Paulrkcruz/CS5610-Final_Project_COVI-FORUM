@@ -48,13 +48,10 @@ const HomeScreen = (props) => {
       .then((response) => {
         // Insert users
         setThreads(response.data);
-
-        // Let UI know that the users are available
         setDataAvailable(true);
       })
       .catch((err) => {
-        // TODO: Show error message
-        console.error("Failed to get all threads", err);
+        console.error("Load error. Please try again.", err);
       });
   }, []);
 
@@ -64,16 +61,11 @@ const HomeScreen = (props) => {
       .then((response) => {
         // Insert users
         setSearchThreads(response.data);
-
-        // Let UI know that the users are available
         setDataAvailable(true);
         setSearchDone(true);
-
-        // update the pagination
       })
       .catch((err) => {
-        // TODO: Show error message
-        console.error("Failed to get all threads", err);
+        console.error("Load error. Please try again.", err);
       });
   };
 
@@ -124,14 +116,13 @@ const HomeScreen = (props) => {
                 activeClassName={"pagination__link--active"}
               />
             </React.Fragment>
-          ) : (
-            <Loader
+              // eslint-disable-next-line react/jsx-no-undef
+          ) : (<Loader
               type="Puff"
               color="#4f5d75"
               height={100}
               width={100}
-              className="loader"
-            />
+              className="loader"/>
           )
         }
       </div>
