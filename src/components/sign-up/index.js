@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { signUpUser } from "./../../models/user";
+import { signUpUser } from "../../models/user";
 import sha256 from "crypto-js/sha256";
 
 const Register = (props) => {
@@ -38,9 +38,9 @@ const Register = (props) => {
   return (
     <div className="container">
       <div onClick={props.changeMode} className="top-right-corner">
-        Sign-in
+        Login
       </div>
-      <h1>Sign-up</h1>
+      <h1>Register</h1>
 
       <div>
         <label htmlFor="name">Username: </label>

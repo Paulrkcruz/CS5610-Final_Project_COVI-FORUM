@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/react-backend/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-backend/bin/www" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-backend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-backend/public/stylesheets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-backend/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-backend/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-backend/views/error.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-backend/views/index.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-backend/views/layout.jade" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/home-screen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/home-screen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-up/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +115,7 @@
       <workItem from="1616886065988" duration="1761000" />
       <workItem from="1617127699969" duration="870000" />
       <workItem from="1617132368043" duration="9000" />
-      <workItem from="1617135167567" duration="7725000" />
+      <workItem from="1617135167567" duration="10223000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { signInUser } from "../../models/user";
 import sha256 from "crypto-js/sha256";
+// SOURCE: https://bezkoder.com/react-hooks-redux-login-registration-example/
 
 const Login = (props) => {
     const [username, setUsername] = useState("");
@@ -14,7 +15,7 @@ const Login = (props) => {
             setError("All fields must be filled to continue.");
             return;
         }
-        var payload = {
+        const payload = {
             email: username,
             password: password,
         };
@@ -37,6 +38,7 @@ const Login = (props) => {
             <div onClick={props.changeMode} className="top-right-corner">
                 Sign-up
             </div>
+
             <h1>Sign-in</h1>
 
             <div>
@@ -70,7 +72,10 @@ const Login = (props) => {
 
             <div className="Error logging in. Please try again.">{error ? error : ""}</div>
         </div>
+
+
     );
+
 };
 
 export default Login;
