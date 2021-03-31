@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from "react-dom";
 import { Switch, Route, HashRouter as Router } from "react-router-dom";
 import './App.css';
 import { getUser } from "./services/user.service";
@@ -13,6 +14,9 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import HomeScreen from "./models/home-screen";
 import Thread from "./components/thread";
+import NotFound from "./models/not-found";
+import NewThread from "./models/new-thread";
+import Authenticate from "../src/actions/index";
 
 // Load cached user
 getUser();
@@ -25,20 +29,24 @@ function App() {
         return <Login setToken={setToken} />
     }
 
-    return (
-        <div className="wrapper">
-            <h1>Application</h1>
-            <BrowserRouter>
-                <Switch>
-                    <Route path="/dashboard">
-                        <Dashboard />
-                    </Route>
-                    <Route path="/preferences">
-                        <Preferences />
-                    </Route>
-                </Switch>
-            </BrowserRouter>
-        </div>
+    // eslint-disable-next-line no-undef
+    ReactDOM.render(
+        <React.StrictMode>
+            <Router>
+                <Header />
+                <div role="main" id="forum-body" className="forum-body">
+                    <Switch>
+                        <Route exact path="/" component={HomeScreen} />
+                        <AuthenticatedRoute path="/thread/new_thread" component={NewThread} />
+                        <Route path="/thread/:thread" component={Thread} />
+                        <Route path="/login" component={Authenticate} />
+                        <Route path="*" component={NotFound} />
+                    </Switch>
+                </div>
+                <Footer />
+            </Router>
+        </React.StrictMode>,
+        document.getElementById("root")
     );
 }
 
