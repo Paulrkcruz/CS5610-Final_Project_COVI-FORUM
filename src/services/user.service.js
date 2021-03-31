@@ -21,7 +21,7 @@ const getUser = () => {
       try {
         cookie = JSON.parse(cookie);
       } catch (error) {
-        console.log("Failed to load cached user");
+        console.log("Failed to load user cache.");
       }
       addUser(cookie);
     }

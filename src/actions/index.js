@@ -4,7 +4,7 @@ import { addUser } from "../services/user.service";
 import { withRouter, Redirect } from "react-router-dom";
 import SignIn from "../components/Login/Login";
 import SignUp from "../components/sign-up";
-
+// Authenticate
 const Authenticate = (props) => {
   const [login, setLogin] = useState(true);
   const [redirectToReferrer, setRedirectToReferrer] = useState(false);

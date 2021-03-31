@@ -11,10 +11,10 @@ const Login = (props) => {
 
     const handleClick = () => {
         if (username === "" || password === "") {
-            setError("Please fill in all fields");
+            setError("All fields must be filled to continue.");
             return;
         }
-        const payload = {
+        var payload = {
             email: username,
             password: password,
         };
@@ -34,40 +34,41 @@ const Login = (props) => {
 
     return (
         <div className="container">
+            <div onClick={props.changeMode} className="top-right-corner">
+                Sign-up
+            </div>
             <h1>Sign-in</h1>
 
             <div>
                 <label htmlFor="email">Email: </label>
                 <input
-                    id="email"
-                    alt="email"
-                    autoFocus
-                    name="username"
-                    placeholder="Enter your Email"
-                    type="text"
-                    onChange={(event) => setUsername(event.target.value)}
-                ></input>
+    id="email"
+    alt="email"
+    autoFocus
+    name="username"
+    placeholder="Enter your Email"
+    type="text"
+    onChange={(event) => setUsername(event.target.value)}
+    />
             </div>
 
             <div>
                 <label htmlFor="password">Password: </label>
                 <input
-                    id="password"
-                    alt="password"
-                    name="password"
-                    placeholder="Enter your Password"
-                    type="password"
-                    onChange={(event) => handlePassword(event.target.value)}
-                ></input>
+    id="password"
+    alt="password"
+    name="password"
+    placeholder="Enter your Password"
+    type="password"
+    onChange={(event) => handlePassword(event.target.value)}
+    />
             </div>
 
             <button aria-label="Sign into Coviforum" onClick={handleClick}>
                 Sign-in
             </button>
-            <div onClick={props.changeMode} className="top-right-corner">
-                Sign up
-            </div>
-            <div className="error">{error ? error : ""}</div>
+
+            <div className="Error logging in. Please try again.">{error ? error : ""}</div>
         </div>
     );
 };

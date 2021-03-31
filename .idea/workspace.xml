@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/new-post/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/post-list/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/post/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/new-thread/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/new-thread/new-thread.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/not-found/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/home-screen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/home-screen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,7 @@
       <workItem from="1616886065988" duration="1761000" />
       <workItem from="1617127699969" duration="870000" />
       <workItem from="1617132368043" duration="9000" />
-      <workItem from="1617135167567" duration="6738000" />
+      <workItem from="1617135167567" duration="7725000" />
     </task>
     <servers />
   </component>

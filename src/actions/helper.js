@@ -1,13 +1,11 @@
 import * as moment from "moment";
 
 const Color = require("color");
-
-export const convertDateToFromNow = (date) => {
-  return moment(date).fromNow();
-};
-
 export const convertDate = (date) => {
   return moment(date).format("MMMM Do YYYY, h:mm:ss a");
+};
+export const convertDateToFromNow = (date) => {
+  return moment(date).fromNow();
 };
 
 export const getRandomBackgroundColor = (str) => {
@@ -21,9 +19,7 @@ export const getRandomBackgroundColor = (str) => {
   }
 
   const light = (saturation * saturation) % 100;
-
   const hue = hash % 360;
-
   const color = Color("hsl(" + hue + ", " + saturation + "%, " + light + "%)");
 
   return {
