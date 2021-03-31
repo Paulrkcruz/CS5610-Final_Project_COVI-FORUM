@@ -24,12 +24,6 @@ header > * {
   line-height: 52px;
 }
 
-header .hamburger-menu {
-  display: none;
-  height: 100%;
-  width: 46px;
-}
-
 header .logo {
   width: 52px;
   /* background-image: url(./assets/logo.png); Add icon later */
