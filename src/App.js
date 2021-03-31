@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from "react-dom";
 import { Switch, Route, HashRouter as Router } from "react-router-dom";
 import './App.css';
 import { getUser } from "./services/user.service";
-import Dashboard from './components/Dashboard/Dashboard';
-import Login from './components/Login/Login';
-import Preferences from './components/Preferences/Preferences';
+// import Dashboard from './components/Dashboard/Dashboard';
+import Login from './components/sign-in';
+// import Preferences from './components/Preferences/Preferences';
 import useToken from './useToken';
 import AuthenticatedRoute from "./components/authenticated-route";
 import * as serviceWorker from "./serviceWorker";
@@ -40,6 +40,7 @@ function App() {
                         <AuthenticatedRoute path="/thread/new_thread" component={NewThread} />
                         <Route path="/thread/:thread" component={Thread} />
                         <Route path="/login" component={Authenticate} />
+                        <Route path="/register" component={Authenticate} />
                         <Route path="*" component={NotFound} />
                     </Switch>
                 </div>

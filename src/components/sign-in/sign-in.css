@@ -1,0 +1,59 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f5f5f6;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+
+.sign-up .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 13px;
+}
+
+.body {
+    padding-top: 52px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.container > button {
+    width: 80px;
+    height: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 11px;
+    background-color: #4f5d75;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.container {
+
+}
+
+
+
+
+.sign-up > div:not(.top-right-corner) {
+    display: flex;
+    margin: 15px;
+    height: auto;
+    line-height: 50px;
+    font-size: 16px;
+}

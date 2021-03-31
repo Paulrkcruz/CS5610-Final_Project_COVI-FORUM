@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./authenticate.css";
 import { addUser } from "../services/user.service";
 import { withRouter, Redirect } from "react-router-dom";
-import SignIn from "../components/Login/Login";
+import SignIn from "../components/sign-in";
 import SignUp from "../components/sign-up";
 // Authenticate
 const Authenticate = (props) => {

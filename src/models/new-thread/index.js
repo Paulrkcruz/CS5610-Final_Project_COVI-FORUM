@@ -8,6 +8,7 @@ import { withRouter, Redirect } from "react-router-dom";
 const NewThread = (props) => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  // eslint-disable-next-line no-unused-vars
   const [tags, setTags] = useState([]);
   const [error, setError] = useState(undefined);
   const [threadId, setThreadId] = useState(undefined);
@@ -15,11 +16,11 @@ const NewThread = (props) => {
 
   const handleClick = () => {
     if (subject === "" || message === "") {
-      setError("All fields must be filled.");
+      setError("All fields must be filled to continue..");
       return;
     }
 
-    var payload = {
+    const payload = {
       subject: subject,
       message: message,
       tags: JSON.stringify(tags),
@@ -28,7 +29,6 @@ const NewThread = (props) => {
     addThread(payload)
       .then((response) => {
         if (response.status === 200) {
-          // link to thread page
           setThreadId(response.data.id);
           setRedirect(true);
         } else if (response.status === 202) {
@@ -61,7 +61,7 @@ const NewThread = (props) => {
     id="subject"
     alt="subject"
     name="subject"
-    placeholder="Enter thread subject"
+    placeholder="Enter Thread Board Topic"
     type="text"
     onChange={(event) => setSubject(event.target.value)}
     />
@@ -92,7 +92,7 @@ const NewThread = (props) => {
         Submit
       </button>
 
-      <div className="ERROR">{error ? error : ""}</div>
+      <div className="ERROR">{error ? error : "Cannot display boards. Please refresh your browser."}</div>
     </div>
   );
 };
