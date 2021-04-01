@@ -10,7 +10,7 @@ const Thread = (props) => {
     setDate(convertDateToFromNow(props.thread.created));
   };
 
-  useEffect(initialSetup, []);
+  useEffect(initialSetup, [props.thread.created]);
 
   const htmlContent = (
     <div className="container">

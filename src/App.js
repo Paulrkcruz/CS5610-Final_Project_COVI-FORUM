@@ -1,56 +1,129 @@
-import React from 'react';
-// import { BrowserRouter } from 'react-router-dom';
-import ReactDOM from "react-dom";
-import { Switch, Route, HashRouter as Router } from "react-router-dom";
-import './App.css';
-import { getUser } from "./services/user.service";
-// import Dashboard from './components/Dashboard/Dashboard';
-import Login from './components/sign-in';
-// import Preferences from './components/Preferences/Preferences';
-import useToken from './useToken';
-import AuthenticatedRoute from "./components/authenticated-route";
-import * as serviceWorker from "./serviceWorker";
-import Header from "./components/header";
-import Footer from "./components/footer";
-import HomeScreen from "./models/home-screen";
-import Thread from "./components/thread";
-import NotFound from "./models/not-found";
-import NewThread from "./models/new-thread";
-import Authenticate from "../src/actions/index";
+import React, { Component } from "react";
+import { Switch, Route, Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import AuthService from "./services/auth.service";
+import Login from "./components/sign-in/login";
+import Register from "./components/sign-up/index";
+import Home from "./models/home-screen";
+import Profile from "./models/profile";
+import BoardUser from "./models/user";
+import BoardModerator from "./models/moderator";
+import BoardAdmin from "./models/admin";
 
-// Load cached user
-getUser();
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.logOut = this.logOut.bind(this);
 
-function App() {
+    this.state = {
+      showModeratorBoard: false,
+      showAdminBoard: false,
+      currentUser: undefined,
+    };
+  }
 
-    const { token, setToken } = useToken();
+  componentDidMount() {
+    const user = AuthService.getCurrentUser();
 
-    if(!token) {
-        return <Login setToken={setToken} />
+    if (user) {
+      this.setState({
+        currentUser: user,
+        showModeratorBoard: user.roles.includes("ROLE_MODERATOR"),
+        showAdminBoard: user.roles.includes("ROLE_ADMIN"),
+      });
     }
+  }
 
-    // eslint-disable-next-line no-undef
-    ReactDOM.render(
-        <React.StrictMode>
-            <Router>
-                <Header />
-                <div role="main" id="forum-body" className="forum-body">
-                    <Switch>
-                        <Route exact path="/" component={HomeScreen} />
-                        <AuthenticatedRoute path="/thread/new_thread" component={NewThread} />
-                        <Route path="/thread/:thread" component={Thread} />
-                        <Route path="/login" component={Authenticate} />
-                        <Route path="/register" component={Authenticate} />
-                        <Route path="*" component={NotFound} />
-                    </Switch>
-                </div>
-                <Footer />
-            </Router>
-        </React.StrictMode>,
-        document.getElementById("root")
+  logOut() {
+    AuthService.logout();
+  }
+
+  render() {
+    const { currentUser, showModeratorBoard, showAdminBoard } = this.state;
+
+    return (
+      <div>
+        <nav className="navbar navbar-expand navbar-dark bg-dark">
+          <Link to={"/"} className="navbar-brand">
+            Coviforum
+          </Link>
+          <div className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <Link to={"/home"} className="nav-link">
+                Home
+              </Link>
+            </li>
+
+            {showModeratorBoard && (
+              <li className="nav-item">
+                <Link to={"/mod"} className="nav-link">
+                  Moderator Board
+                </Link>
+              </li>
+            )}
+
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/admin"} className="nav-link">
+                  Admin Board
+                </Link>
+              </li>
+            )}
+
+            {currentUser && (
+              <li className="nav-item">
+                <Link to={"/user"} className="nav-link">
+                  User Board
+                </Link>
+              </li>
+            )}
+          </div>
+
+          {currentUser ? (
+            <div className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <Link to={"/profile"} className="nav-link">
+                  {currentUser.username}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <a href="/login" className="nav-link" onClick={this.logOut}>
+                  LogOut
+                </a>
+              </li>
+            </div>
+          ) : (
+            <div className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <Link to={"/login"} className="nav-link">
+                  Login
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to={"/register"} className="nav-link">
+                  Sign Up
+                </Link>
+              </li>
+            </div>
+          )}
+        </nav>
+
+        <div className="container mt-3">
+          <Switch>
+            <Route exact path={["/", "/home"]} component={Home} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/profile" component={Profile} />
+            <Route path="/user" component={BoardUser} />
+            <Route path="/mod" component={BoardModerator} />
+            <Route path="/admin" component={BoardAdmin} />
+          </Switch>
+        </div>
+      </div>
     );
+  }
 }
-
-serviceWorker.unregister();
 
 export default App;
