@@ -3,6 +3,7 @@ const config = require("../config/auth.config.js");
 const db = require("../config/db.config");
 const User = db.USER;
 
+// eslint-disable-next-line no-undef
 verifyToken = (req, res, next) => {
   let token = req.headers["x-access-token"];
 
@@ -23,6 +24,7 @@ verifyToken = (req, res, next) => {
   });
 };
 
+// eslint-disable-next-line no-undef
 isAdmin = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
@@ -34,13 +36,14 @@ isAdmin = (req, res, next) => {
       }
 
       res.status(403).send({
-        message: "Require Admin Role!"
+        message: "Requires Admin Role!"
       });
       return;
     });
   });
 };
 
+// eslint-disable-next-line no-undef
 isModerator = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
@@ -52,7 +55,7 @@ isModerator = (req, res, next) => {
       }
 
       res.status(403).send({
-        message: "Require Moderator Role!"
+        message: "Requires Moderator Role!"
       });
     });
   });
@@ -74,7 +77,7 @@ isModeratorOrAdmin = (req, res, next) => {
       }
 
       res.status(403).send({
-        message: "Require Moderator or Admin Role!"
+        message: "Requires Moderator or Admin Role!"
       });
     });
   });

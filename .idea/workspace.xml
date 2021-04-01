@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/config/db.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/config/db.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/middleware/verifySignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/middleware/verifySignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/models/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-backend/app/middleware/authJwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/middleware/authJwt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/.package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-up/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/cookie.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/cookie.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +86,17 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoviforumApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="coviforum" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.coviforum.coviforum.CoviforumApplication" />
@@ -123,6 +137,7 @@
       <workItem from="1617231689044" duration="2581000" />
       <workItem from="1617234415512" duration="11618000" />
       <workItem from="1617307940275" duration="586000" />
+      <workItem from="1617308665581" duration="6841000" />
     </task>
     <servers />
   </component>
