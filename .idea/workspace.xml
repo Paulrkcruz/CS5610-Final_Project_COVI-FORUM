@@ -5,258 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/.bin/uuid" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/.bin/uuid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/semver/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/semver/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/bin/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/semver/bin/semver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/classes/comparator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/classes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/classes/range.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/classes/semver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/clean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/cmp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/coerce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/compare-build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/compare-loose.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/compare.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/diff.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/eq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/gt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/gte.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/inc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/lt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/lte.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/major.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/minor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/neq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/patch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/prerelease.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/rcompare.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/rsort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/satisfies.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/functions/valid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/internal/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/internal/debug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/internal/identifiers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/internal/parse-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/internal/re.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/semver/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/preload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/ranges/gtr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/ranges/intersects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/ranges/ltr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/ranges/max-satisfying.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/ranges/min-satisfying.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/ranges/min-version.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/ranges/outside.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/ranges/simplify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/ranges/subset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/ranges/to-comparators.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/semver/ranges/valid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/AggregateError.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/AggregateError.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/Deferred.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/Deferred.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/Deferred.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/Pool.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/Pool.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/Pool.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/TimeoutError.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/TimeoutError.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/TimeoutError.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/lib/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/types/AggregateError.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/types/Deferred.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/types/Pool.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/types/TimeoutError.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize-pool/types/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/belongs-to-many.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/belongs-to-many.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/belongs-to.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/belongs-to.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/has-many.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/has-many.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/has-one.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/has-one.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/mixin.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/associations/mixin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/data-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/data-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/deferrable.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/deferrable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/connection-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/query-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/query-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/query-generator/helpers/quote.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/query-generator/helpers/quote.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/query-generator/operators.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/query-generator/operators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/query-generator/transaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/query-generator/transaction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/abstract/query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mariadb/data-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mariadb/data-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mariadb/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mariadb/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mariadb/query-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mariadb/query-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mariadb/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mariadb/query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/async-queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/connection-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/connection-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/data-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/data-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/query-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/query-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/query-interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/query-interface.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mssql/query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/connection-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/connection-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/data-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/data-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/query-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/query-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/query-interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/query-interface.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/mysql/query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/data-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/data-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/query-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/query-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/query-interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/query-interface.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/postgres/query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/connection-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/connection-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/data-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/data-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/query-generator.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/query-generator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/query-interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/query-interface.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/dialects/sqlite/query.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/aggregate-error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/association-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/association-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/base-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/base-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/bulk-record-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/bulk-record-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/access-denied-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/access-denied-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/connection-acquire-timeout-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/connection-acquire-timeout-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/connection-refused-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/connection-refused-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/connection-timed-out-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/connection-timed-out-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/host-not-found-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/host-not-found-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/host-not-reachable-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/host-not-reachable-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/invalid-connection-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/connection/invalid-connection-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/database-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/database-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/database/exclusion-constraint-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/database/exclusion-constraint-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/database/foreign-key-constraint-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/database/foreign-key-constraint-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/database/timeout-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/database/timeout-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/database/unknown-constraint-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/database/unknown-constraint-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/eager-loading-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/eager-loading-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/empty-result-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/empty-result-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/instance-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/instance-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/optimistic-lock-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/optimistic-lock-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/query-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/query-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/sequelize-scope-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/sequelize-scope-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/validation-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/validation-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/validation/unique-constraint-error.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/errors/validation/unique-constraint-error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/hooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/hooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/instance-validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/instance-validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/model-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/model-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/operators.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/operators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/sequelize.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/sequelize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/transaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/transaction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/utils/class-to-invokable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/utils/deprecations.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/utils/deprecations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/utils/join-sql-fragments.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/utils/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/lib/utils/logger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/associations/base.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/associations/base.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/associations/belongs-to-many.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/associations/belongs-to-many.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/associations/belongs-to.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/associations/belongs-to.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/associations/has-many.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/associations/has-many.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/associations/has-one.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/associations/has-one.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/connection-manager.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/connection-manager.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/errors.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/errors.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/hooks.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/hooks.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/instance-validator.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/instance-validator.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/model-manager.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/model-manager.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/model.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/model.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/query-interface.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/query-interface.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/sequelize.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/sequelize.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/transaction.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/transaction.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/utils.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/lib/utils.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/sequelize/types/type-helpers/set-required.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/uuid/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/uuid/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/uuid/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/bin/uuid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/md5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/nil.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/regex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/rng.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/sha1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/stringify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/v1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/v3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/v35.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/v4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/v5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-browser/version.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/md5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/nil.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/regex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/rng.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/sha1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/stringify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/v1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/v3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/v35.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/v4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/v5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/esm-node/version.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/md5-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/md5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/nil.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/regex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/rng-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/rng.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/sha1-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/sha1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/stringify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/umd/uuid.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/umd/uuidNIL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/umd/uuidParse.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/umd/uuidStringify.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/umd/uuidValidate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/umd/uuidVersion.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/umd/uuidv1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/umd/uuidv3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/umd/uuidv4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/umd/uuidv5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/uuid-bin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/v1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/v3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/v35.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/v4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/v5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/dist/version.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/uuid/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/uuid/wrapper.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/wkx/dist/wkx.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/wkx/dist/wkx.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/wkx/dist/wkx.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/wkx/dist/wkx.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/node_modules/wkx/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/node_modules/wkx/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-backend/app/config/db.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/config/db.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-backend/app/middleware/verifySignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/middleware/verifySignUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-backend/app/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/models/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,12 +58,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/actions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -323,19 +83,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CoviforumApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="coviforum" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.coviforum.coviforum.CoviforumApplication" />
@@ -374,7 +121,8 @@
       <workItem from="1617135167567" duration="11697000" />
       <workItem from="1617154754106" duration="13047000" />
       <workItem from="1617231689044" duration="2581000" />
-      <workItem from="1617234415512" duration="9547000" />
+      <workItem from="1617234415512" duration="11618000" />
+      <workItem from="1617307940275" duration="586000" />
     </task>
     <servers />
   </component>

@@ -1,3 +1,40 @@
+# CS5610 Final Project
+
+This project is called CoviForum - 'A Discussion Forum Board to Discuss the effects of the COVID-19 Pandemic'
+
+## This project was built utilizing the following API:
+
+### Front-end:
+React 
+React Router
+React Hooks 
+Token-based Authentication
+LocalStorage
+Axios
+Bootstrap 
+
+### Modules:
+React 16
+react-router-dom 5.1.2
+axios 0.19.2
+react-validation 3.0.7
+Bootstrap 4
+validator 12.2.0
+
+## Back-end:
+JWT Authentication
+Express Server
+Sequelize
+MySQL
+
+### Modules:
+Express 4.17.1
+bcryptjs 2.4.3
+jsonwebtoken 8.5.1
+Sequelize 5.21.3
+MySQL
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

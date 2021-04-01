@@ -2,6 +2,7 @@ const db = require("../models");
 const ROLES = db.ROLES;
 const User = db.user;
 
+// eslint-disable-next-line no-undef
 checkDuplicateUsernameOrEmail = (req, res, next) => {
   // Username
   User.findOne({
@@ -34,6 +35,7 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
   });
 };
 
+// eslint-disable-next-line no-undef
 checkRolesExisted = (req, res, next) => {
   if (req.body.roles) {
     for (let i = 0; i < req.body.roles.length; i++) {
@@ -50,7 +52,9 @@ checkRolesExisted = (req, res, next) => {
 };
 
 const verifySignUp = {
+  // eslint-disable-next-line no-undef
   checkDuplicateUsernameOrEmail: checkDuplicateUsernameOrEmail,
+  // eslint-disable-next-line no-undef
   checkRolesExisted: checkRolesExisted
 };
 
