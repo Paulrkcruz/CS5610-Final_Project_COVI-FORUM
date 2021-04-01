@@ -3,14 +3,13 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import isEmail from 'validator/lib/isEmail';
-
 import AuthService from "../../services/auth.service";
 
 const required = (value) => {
     if (!value) {
         return (
             <div className="alert alert-danger" role="alert">
-                This field is required!
+                This field is required.
             </div>
         );
     }
@@ -20,7 +19,7 @@ const validEmail = (value) => {
     if (!isEmail(value)) {
         return (
             <div className="alert alert-danger" role="alert">
-                This is not a valid email.
+                This email address is invalid. Please try again.
             </div>
         );
     }
@@ -37,10 +36,10 @@ const vusername = (value) => {
 };
 
 const vpassword = (value) => {
-    if (value.length < 6 || value.length > 40) {
+    if (value.length < 6 || value.length > 15) {
         return (
             <div className="alert alert-danger" role="alert">
-                The password must be between 6 and 40 characters.
+                The password must be between 6 and 15 characters.
             </div>
         );
     }
