@@ -3,7 +3,7 @@ import "./authenticate.css";
 import { addUser } from "../services/user.service";
 import { withRouter, Redirect } from "react-router-dom";
 import SignIn from "../components/sign-in";
-import SignUp from "../components/sign-up";
+import SignUp from "../components/sign-up/register";
 // Authenticate
 const Authenticate = (props) => {
   const [login, setLogin] = useState(true);

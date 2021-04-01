@@ -1,48 +1,38 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+
 import AuthService from "./services/auth.service";
+
 import Login from "./components/sign-in/login";
-import Register from "./components/sign-up/index";
+import Register from "./components/sign-up/register";
 import Home from "./models/home-screen";
 import Profile from "./models/profile";
 import BoardUser from "./models/user";
 import BoardModerator from "./models/moderator";
 import BoardAdmin from "./models/admin";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.logOut = this.logOut.bind(this);
+const App = () => {
+  const [showModeratorBoard, setShowModeratorBoard] = useState(false);
+  const [showAdminBoard, setShowAdminBoard] = useState(false);
+  const [currentUser, setCurrentUser] = useState(undefined);
 
-    this.state = {
-      showModeratorBoard: false,
-      showAdminBoard: false,
-      currentUser: undefined,
-    };
-  }
-
-  componentDidMount() {
+  useEffect(() => {
     const user = AuthService.getCurrentUser();
 
     if (user) {
-      this.setState({
-        currentUser: user,
-        showModeratorBoard: user.roles.includes("ROLE_MODERATOR"),
-        showAdminBoard: user.roles.includes("ROLE_ADMIN"),
-      });
+      setCurrentUser(user);
+      setShowModeratorBoard(user.roles.includes("ROLE_MODERATOR"));
+      setShowAdminBoard(user.roles.includes("ROLE_ADMIN"));
     }
-  }
+  }, []);
 
-  logOut() {
+  const logOut = () => {
     AuthService.logout();
-  }
+  };
 
-  render() {
-    const { currentUser, showModeratorBoard, showAdminBoard } = this.state;
-
-    return (
+  return (
       <div>
         <nav className="navbar navbar-expand navbar-dark bg-dark">
           <Link to={"/"} className="navbar-brand">
@@ -56,57 +46,57 @@ class App extends Component {
             </li>
 
             {showModeratorBoard && (
-              <li className="nav-item">
-                <Link to={"/mod"} className="nav-link">
-                  Moderator Board
-                </Link>
-              </li>
+                <li className="nav-item">
+                  <Link to={"/mod"} className="nav-link">
+                    Moderator Board
+                  </Link>
+                </li>
             )}
 
             {showAdminBoard && (
-              <li className="nav-item">
-                <Link to={"/admin"} className="nav-link">
-                  Admin Board
-                </Link>
-              </li>
+                <li className="nav-item">
+                  <Link to={"/admin"} className="nav-link">
+                    Admin Board
+                  </Link>
+                </li>
             )}
 
             {currentUser && (
-              <li className="nav-item">
-                <Link to={"/user"} className="nav-link">
-                  User Board
-                </Link>
-              </li>
+                <li className="nav-item">
+                  <Link to={"/user"} className="nav-link">
+                    User Board
+                  </Link>
+                </li>
             )}
           </div>
 
           {currentUser ? (
-            <div className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link to={"/profile"} className="nav-link">
-                  {currentUser.username}
-                </Link>
-              </li>
-              <li className="nav-item">
-                <a href="/login" className="nav-link" onClick={this.logOut}>
-                  LogOut
-                </a>
-              </li>
-            </div>
+              <div className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <Link to={"/profile"} className="nav-link">
+                    {currentUser.username}
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <a href="/login" className="nav-link" onClick={logOut}>
+                    LogOut
+                  </a>
+                </li>
+              </div>
           ) : (
-            <div className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link to={"/login"} className="nav-link">
-                  Login
-                </Link>
-              </li>
+              <div className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <Link to={"/login"} className="nav-link">
+                    Login
+                  </Link>
+                </li>
 
-              <li className="nav-item">
-                <Link to={"/register"} className="nav-link">
-                  Sign Up
-                </Link>
-              </li>
-            </div>
+                <li className="nav-item">
+                  <Link to={"/register"} className="nav-link">
+                    Sign Up
+                  </Link>
+                </li>
+              </div>
           )}
         </nav>
 
@@ -122,8 +112,7 @@ class App extends Component {
           </Switch>
         </div>
       </div>
-    );
-  }
-}
+  );
+};
 
 export default App;
