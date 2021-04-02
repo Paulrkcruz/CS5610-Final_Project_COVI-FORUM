@@ -2,6 +2,25 @@
 
 This project is called CoviForum - 'A Discussion Forum Board to Discuss the effects of the COVID-19 Pandemic'
 
+## To Run This Application:
+
+#### Frontend:
+
+Open terminal inside the root folder, enter:
+npm start
+
+#### Backend:
+
+Open another terminal, enter::
+cd server-backend
+node server.js
+
+OR
+
+#### Front & Back end
+Type:
+npm run start:all (IN PROGRESS)
+
 ## This project was built utilizing the following API:
 
 ### Front-end:
