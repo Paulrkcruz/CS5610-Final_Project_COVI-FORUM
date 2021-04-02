@@ -61,6 +61,7 @@ isModerator = (req, res, next) => {
   });
 };
 
+// eslint-disable-next-line no-undef
 isModeratorOrAdmin = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
@@ -84,9 +85,13 @@ isModeratorOrAdmin = (req, res, next) => {
 };
 
 const authJwt = {
+  // eslint-disable-next-line no-undef
   verifyToken: verifyToken,
+  // eslint-disable-next-line no-undef
   isAdmin: isAdmin,
+  // eslint-disable-next-line no-undef
   isModerator: isModerator,
+  // eslint-disable-next-line no-undef
   isModeratorOrAdmin: isModeratorOrAdmin
 };
 module.exports = authJwt;

@@ -3,8 +3,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
-
-
+app.use(cors())
 const db = require("./app/models");
 const Role = db.role;
 
@@ -31,7 +30,7 @@ function initial() {
 }
 
 const corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "http://localhost:8080"
 };
 
 app.use(cors(corsOptions));
@@ -43,9 +42,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
-app.get("/", (req, res) => {
-  res.json({ message: " > Express Node Server is now running for CoviForum on port 8081." });
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
 });
+
+// app.get("/", (req, res) => {
+//   res.json({ message: " > Express Node Server is now running for CoviForum on port 8081." });
+//   res.header("Access-Control-Allow-Origin", "*");
+// });
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
