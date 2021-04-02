@@ -34,18 +34,21 @@ const App = () => {
 
   return (
       <div>
-        <nav className="navbar navbar-expand navbar-blue bg-light">
+        <nav className="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
           <Link to={"/"} className="navbar-brand">
             <a className="navbar-brand" href="#">
                 </a>
               CoviForum
           </Link>
+
+
           <div className="navbar-nav mr-auto">
-            <li className="nav-item">
+            <li className="nav-item active">
               <Link to={"/home"} className="nav-link">
                 Home
               </Link>
             </li>
+
 
             {showModeratorBoard && (
                 <li className="nav-item">
@@ -75,9 +78,8 @@ const App = () => {
 
           {currentUser ? (
 
-                  <div className="topnav-right">
-                    <input type="text" placeholder="Search.."></input>
-              <div className="navbar-nav float-lg-end">
+              <div className="navbar-right">
+              <div className="navbar-nav">
 
                 <li className="nav-item">
 
@@ -91,11 +93,13 @@ const App = () => {
                   <a href="/login" className="nav-link" onClick={logOut}>
                     LogOut
                   </a>
-                </li>
+                </li></div>
+
               </div>
-              </div>
+
+
           ) : (
-              <div className="topnav-right">
+
               <div className="navbar-nav ml-auto">
                 <li className="nav-item">
                   <Link to={"/login"} className="nav-link">
@@ -109,7 +113,6 @@ const App = () => {
                   </Link>
                 </li>
 
-              </div>
               </div>
           )}
         </nav>
