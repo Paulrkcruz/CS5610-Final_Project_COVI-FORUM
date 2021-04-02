@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-
+import "./footer.css";
 import AuthService from "./services/auth.service";
-
 import Login from "./components/sign-in/login";
 import Register from "./components/sign-up/register";
 import Home from "./models/home-screen";
@@ -12,6 +11,7 @@ import Profile from "./models/profile";
 import BoardUser from "./models/user";
 import BoardModerator from "./models/moderator";
 import BoardAdmin from "./models/admin";
+
 
 const App = () => {
   const [showModeratorBoard, setShowModeratorBoard] = useState(false);
@@ -34,9 +34,11 @@ const App = () => {
 
   return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav className="navbar navbar-expand navbar-blue bg-light">
           <Link to={"/"} className="navbar-brand">
-            CoviForum
+            <a className="navbar-brand" href="#">
+                </a>
+              CoviForum
           </Link>
           <div className="navbar-nav mr-auto">
             <li className="nav-item">
@@ -67,15 +69,23 @@ const App = () => {
                     User Board
                   </Link>
                 </li>
+
             )}
           </div>
 
           {currentUser ? (
-              <div className="navbar-nav ml-auto">
+
+                  <div className="topnav-right">
+                    <input type="text" placeholder="Search.."></input>
+              <div className="navbar-nav float-lg-end">
+
                 <li className="nav-item">
+
+
                   <Link to={"/profile"} className="nav-link">
-                    {currentUser.username}
+                   Welcome, {currentUser.username}
                   </Link>
+
                 </li>
                 <li className="nav-item">
                   <a href="/login" className="nav-link" onClick={logOut}>
@@ -83,7 +93,9 @@ const App = () => {
                   </a>
                 </li>
               </div>
+              </div>
           ) : (
+              <div className="topnav-right">
               <div className="navbar-nav ml-auto">
                 <li className="nav-item">
                   <Link to={"/login"} className="nav-link">
@@ -96,6 +108,8 @@ const App = () => {
                     Sign Up
                   </Link>
                 </li>
+
+              </div>
               </div>
           )}
         </nav>
@@ -110,9 +124,21 @@ const App = () => {
             <Route path="/mod" component={BoardModerator} />
             <Route path="/admin" component={BoardAdmin} />
           </Switch>
+
+
+          <footer role="footer" >
+            <div className="copyright">
+              Coviforum Discussion Boards     Copyright © 2020
+            </div>
+          </footer>
+
         </div>
+
+
       </div>
+
   );
+
 };
 
 export default App;
