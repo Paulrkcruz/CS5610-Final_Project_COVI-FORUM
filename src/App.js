@@ -34,7 +34,7 @@ const App = () => {
 
   return (
       <div>
-        <nav className="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-icon-top navbar-expand-lg navbar-light bg-blue">
           <Link to={"/"} className="navbar-brand">
             <a className="navbar-brand" href="#">
                 </a>
