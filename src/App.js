@@ -36,7 +36,7 @@ const App = () => {
       <div>
         <nav className="navbar navbar-icon-top navbar-expand-lg navbar-light bg-blue">
           <Link to={"/"} className="navbar-brand">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand">
                 </a>
               CoviForum
           </Link>
@@ -131,7 +131,7 @@ const App = () => {
 
           <footer role="footer" >
             <div className="copyright">
-              Coviforum Discussion Boards     Copyright © 2020
+              Coviforum Discussion Boards       -      Copyright © 2021
             </div>
           </footer>
 
