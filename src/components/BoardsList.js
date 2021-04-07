@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import BoardsDataService from "../services/BoardsService";
 import { Link } from "react-router-dom";
 
-const BoardssList = () => {
+const BoardsList = () => {
   const [boards, setBoardss] = useState([]);
   const [currentBoards, setCurrentBoards] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(-1);
   const [searchTitle, setSearchTitle] = useState("");
 
   useEffect(() => {
-    retrieveBoardss();
+    retrieveBoards();
   }, []);
 
   const onChangeSearchTitle = e => {
@@ -17,8 +17,8 @@ const BoardssList = () => {
     setSearchTitle(searchTitle);
   };
 
-  const retrieveBoardss = () => {
-    BoardsDataService.getAll()
+  const retrieveBoards = () => {
+    BoardsDataService.getAllBoards()
       .then(response => {
         setBoardss(response.data);
         console.log(response.data);
@@ -29,7 +29,7 @@ const BoardssList = () => {
   };
 
   const refreshList = () => {
-    retrieveBoardss();
+    retrieveBoards();
     setCurrentBoards(null);
     setCurrentIndex(-1);
   };
@@ -39,8 +39,8 @@ const BoardssList = () => {
     setCurrentIndex(index);
   };
 
-  const removeAllBoardss = () => {
-    BoardsDataService.removeAll()
+  const removeAllBoards = () => {
+    BoardsDataService.removeAllBoards()
       .then(response => {
         console.log(response.data);
         refreshList();
@@ -51,7 +51,7 @@ const BoardssList = () => {
   };
 
   const findByTitle = () => {
-    BoardsDataService.findByTitle(searchTitle)
+    BoardsDataService.findBoardByTitle(searchTitle)
       .then(response => {
         setBoardss(response.data);
         console.log(response.data);
@@ -103,7 +103,7 @@ const BoardssList = () => {
 
         <button
           className="m-3 btn btn-sm btn-danger"
-          onClick={removeAllBoardss}
+          onClick={removeAllBoards}
         >
           Remove All
         </button>
@@ -149,4 +149,4 @@ const BoardssList = () => {
   );
 };
 
-export default BoardssList;
+export default BoardsList;

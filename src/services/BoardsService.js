@@ -1,39 +1,39 @@
 import http from "../http-common";
 
-const getAll = () => {
+const getAllBoards = () => {
   return http.get("/Boards");
 };
 
-const get = id => {
+const getBoardById = id => {
   return http.get(`/Boards/${id}`);
 };
 
-const create = data => {
+const createBoard = data => {
   return http.post("/Boards", data);
 };
 
-const update = (id, data) => {
+const updateBoard = (id, data) => {
   return http.put(`/Boards/${id}`, data);
 };
 
-const remove = id => {
+const removeBoard = id => {
   return http.delete(`/Boards/${id}`);
 };
 
-const removeAll = () => {
+const removeAllBoards = () => {
   return http.delete(`/Boards`);
 };
 
-const findByTitle = title => {
+const findBoardByTitle = title => {
   return http.get(`/Boards?title=${title}`);
 };
 
 export default {
-  getAll,
-  get,
-  create,
-  update,
-  remove,
-  removeAll,
-  findByTitle
+  getAllBoards,
+  getBoardById,
+  createBoard,
+  updateBoard,
+  removeBoard,
+  removeAllBoards,
+  findBoardByTitle
 };

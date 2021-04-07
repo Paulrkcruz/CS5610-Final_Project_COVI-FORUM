@@ -6,24 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/webpack-dev-server/node_modules/fsevents/build/Release/fse.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-backend/app/controllers/boards.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/controllers/boards.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-backend/app/controllers/thread.controller.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server-backend/app/models/thread.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/routes/thread.route.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/new-post/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/post-list/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/post/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddBoards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddBoards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoardsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search-bar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search-bar/search-bar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/thread-list/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/thread/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/thread/thread.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/new-thread/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/new-thread/new-thread.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/not-found/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/BoardsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BoardsService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,13 +83,15 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,7 +140,11 @@
       <workItem from="1617325837281" duration="19298000" />
       <workItem from="1617669589262" duration="1467000" />
       <workItem from="1617671085803" duration="4039000" />
-      <workItem from="1617759386219" duration="1177000" />
+      <workItem from="1617759386219" duration="2948000" />
+      <workItem from="1617764715709" duration="1058000" />
+      <workItem from="1617767803529" duration="2000" />
+      <workItem from="1617767812249" duration="1361000" />
+      <workItem from="1617769535442" duration="1065000" />
     </task>
     <servers />
   </component>

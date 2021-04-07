@@ -83,7 +83,7 @@ exports.createBoards = (req, res) => {
 // Retrieve all Boards from the database.
 exports.findAllBoards = (req, res) => {
   const title = req.query.title;
-  var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
+  const condition = title ? {title: {[Op.like]: `%${title}%`}} : null;
 
   Boards.findAllBoards({ where: condition })
     .then(data => {
@@ -170,7 +170,7 @@ exports.deleteAll = (req, res) => {
     truncate: false
   })
     .then(nums => {
-      res.send({ message: `${nums} Boardss were deleted successfully!` });
+      res.send({ message: `${nums} Boards were deleted successfully!` });
     })
     .catch(err => {
       res.status(500).send({

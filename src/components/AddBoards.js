@@ -17,12 +17,12 @@ const AddBoards = () => {
   };
 
   const saveBoards = () => {
-    var data = {
+    const data = {
       title: tutorial.title,
       description: tutorial.description
     };
 
-    BoardsDataService.create(data)
+    BoardsDataService.createBoard(data)
       .then(response => {
         setBoards({
           id: response.data.id,

@@ -31,7 +31,7 @@ const BoardUser = () => {
         <div className="container">
             <header className="jumbotron">
                 <h3>{content}</h3>
-                <Link to={"/add"} className="nav-link">
+                <Link to={"/addBoard"} className="nav-link">
                     Add A Discussion Board
                 </Link>
             </header>
