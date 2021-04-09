@@ -1,39 +1,44 @@
 import http from "../http-common";
 
-const getAllBoards = () => {
-  return http.get("/Boards");
+const findAllBoards = () => {
+  return http.get("/boards");
 };
 
-const getBoardById = id => {
-  return http.get(`/Boards/${id}`);
+const findAllPublishedBoards = () => {
+  return http.get("/boards");
 };
 
-const createBoard = data => {
-  return http.post("/Boards", data);
+const getBoards = id => {
+  return http.get(`/boards/${id}`);
 };
 
-const updateBoard = (id, data) => {
-  return http.put(`/Boards/${id}`, data);
+const createBoards = data => {
+  return http.post("/boards", data);
 };
 
-const removeBoard = id => {
-  return http.delete(`/Boards/${id}`);
+const updateBoards = (id, data) => {
+  return http.put(`/boards/${id}`, data);
 };
 
-const removeAllBoards = () => {
-  return http.delete(`/Boards`);
+const deleteBoards = id => {
+  return http.delete(`/boards/${id}`);
 };
 
-const findBoardByTitle = title => {
-  return http.get(`/Boards?title=${title}`);
+const deleteAllBoards = () => {
+  return http.delete(`/boards`);
+};
+
+const findBoardsByTitle = title => {
+  return http.get(`/boards?title=${title}`);
 };
 
 export default {
-  getAllBoards,
-  getBoardById,
-  createBoard,
-  updateBoard,
-  removeBoard,
-  removeAllBoards,
-  findBoardByTitle
+  findAllBoards,
+  findAllPublishedBoards,
+  getBoards,
+  createBoards,
+  updateBoards,
+  deleteBoards,
+  deleteAllBoards,
+  findBoardsByTitle
 };

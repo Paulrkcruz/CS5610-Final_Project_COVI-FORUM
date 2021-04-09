@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BoardsDataService from "../services/BoardsService";
+import "./common.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Boards = props => {
   const initialBoardsState = {
@@ -12,7 +14,7 @@ const Boards = props => {
   const [message, setMessage] = useState("");
 
   const getBoards = id => {
-    BoardsDataService.get(id)
+    BoardsDataService.getBoards(id)
       .then(response => {
         setCurrentBoards(response.data);
         console.log(response.data);
@@ -39,7 +41,7 @@ const Boards = props => {
       published: status
     };
 
-    BoardsDataService.update(currentBoards.id, data)
+    BoardsDataService.updateBoards(currentBoards.id, data)
       .then(response => {
         setCurrentBoards({ ...currentBoards, published: status });
         console.log(response.data);

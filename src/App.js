@@ -6,12 +6,14 @@ import "./footer.css";
 import AuthService from "./services/auth.service";
 import Login from "./components/sign-in/login";
 import Register from "./components/sign-up/register";
-import Home from "./models/home-screen";
+import HomeScreen from "./models/home-screen";
 import Profile from "./models/profile";
 import BoardUser from "./models/user";
 import BoardModerator from "./models/moderator";
 import BoardAdmin from "./models/admin";
-
+import AddBoards from "./components/AddBoards";
+import Boards from "./components/Boards";
+import BoardsList from "./components/BoardsList";
 
 const App = () => {
   const [showModeratorBoard, setShowModeratorBoard] = useState(false);
@@ -35,7 +37,7 @@ const App = () => {
   return (
       <div>
         <nav className="navbar navbar-icon-top navbar-expand-lg navbar-light bg-blue">
-          <Link to={"/"} className="navbar-brand">
+          <Link to={"/home"} className="navbar-brand">
             <a className="navbar-brand">
                 </a>
               CoviForum
@@ -44,10 +46,16 @@ const App = () => {
 
           <div className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <Link to={"/"} className="nav-link">
+              <Link to={"/home"} className="nav-link">
                 Home
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to={"/add"} className="nav-link">
+                New Boards
+              </Link>
+            </li>
+
 
 
             {showModeratorBoard && (
@@ -69,7 +77,7 @@ const App = () => {
             {currentUser && (
                 <li className="nav-item">
                   <Link to={"/user"} className="nav-link">
-                    User Board
+                    Preferences
                   </Link>
                 </li>
 
@@ -119,13 +127,17 @@ const App = () => {
 
         <div className="container mt-3">
           <Switch>
-            <Route exact path={["/", "/home"]} component={Home} />
+            <Route exact path={["/home", "/home"]} component={Boards} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/profile" component={Profile} />
             <Route path="/user" component={BoardUser} />
             <Route path="/mod" component={BoardModerator} />
             <Route path="/admin" component={BoardAdmin} />
+            <Route exact path={["/", "/boards"]} component={BoardsList} />
+            <Route exact path="/add" component={AddBoards} />
+            <Route path="/boards/:id" component={Boards} />
+
           </Switch>
 
 

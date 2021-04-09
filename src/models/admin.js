@@ -3,7 +3,7 @@ import AddBoards from "./../components/AddBoards";
 import Boards from "./../components/Boards";
 import BoardsList from "./../components/BoardsList";
 import { Switch, Route, Link } from "react-router-dom";
-
+import "./common.css";
 import UserService from "../services/user.service";
 
 const BoardAdmin = () => {

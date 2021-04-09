@@ -3,10 +3,12 @@ import AddBoards from "./../components/AddBoards";
 import Boards from "./../components/Boards";
 import BoardsList from "./../components/BoardsList";
 import { Switch, Route } from "react-router-dom";
+import "./common.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import UserService from "../services/user.service";
 
-const Home = () => {
+const HomeScreen = () => {
     const [content, setContent] = useState("");
 
     useEffect(() => {
@@ -35,13 +37,11 @@ const Home = () => {
                         <Route exact path="/add" component={AddBoards} />
                         <Route path="/boards/:id" component={Boards} />
                     </Switch>
-                </div>
-
-            </header>
-        </div>
+                </div></header></div>
 
 
-    );
+
+                );
 };
 
-export default Home;
+export default HomeScreen;

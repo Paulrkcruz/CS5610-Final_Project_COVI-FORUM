@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import AuthService from "../services/auth.service";
+import "./common.css";
 
 export default class Profile extends Component {
     constructor(props) {
@@ -32,7 +33,7 @@ export default class Profile extends Component {
                     <strong>Email:</strong>{" "}
                     {currentUser.email}
                 </p>
-                <strong>Authorities:</strong>
+                <strong>User Role:</strong>
                 <ul>
                     {currentUser.roles &&
                     currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}

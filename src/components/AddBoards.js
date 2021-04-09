@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import BoardsDataService from "../services/BoardsService";
+import "./common.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const AddBoards = () => {
   const initialBoardsState = {
@@ -8,21 +10,21 @@ const AddBoards = () => {
     description: "",
     published: false
   };
-  const [tutorial, setBoards] = useState(initialBoardsState);
+  const [boards, setBoards] = useState(initialBoardsState);
   const [submitted, setSubmitted] = useState(false);
 
   const handleInputChange = event => {
     const { name, value } = event.target;
-    setBoards({ ...tutorial, [name]: value });
+    setBoards({ ...boards, [name]: value });
   };
 
   const saveBoards = () => {
     const data = {
-      title: tutorial.title,
-      description: tutorial.description
+      title: boards.title,
+      description: boards.description
     };
 
-    BoardsDataService.createBoard(data)
+    BoardsDataService.createBoards(data)
       .then(response => {
         setBoards({
           id: response.data.id,
@@ -44,7 +46,9 @@ const AddBoards = () => {
   };
 
   return (
-    <div className="submit-form">
+
+      <div className="submit-form">
+        <h3>Post in the Boards</h3>
       {submitted ? (
         <div>
           <h4>You submitted successfully!</h4>
@@ -61,7 +65,7 @@ const AddBoards = () => {
               className="form-control"
               id="title"
               required
-              value={tutorial.title}
+              value={boards.title}
               onChange={handleInputChange}
               name="title"
             />
@@ -74,7 +78,7 @@ const AddBoards = () => {
               className="form-control"
               id="description"
               required
-              value={tutorial.description}
+              value={boards.description}
               onChange={handleInputChange}
               name="description"
             />

@@ -1,54 +1,6 @@
 const db = require("../models");
 const Boards = db.boards;
 const Op = db.Sequelize.Op;
-const Comment = db.comments;
-
-// Create and Save new Comments
-exports.createComment = (boardsId, comment) => {
-  return Comment.create({
-    name: comment.name,
-    text: comment.text,
-    boardsId: boardsId,
-  })
-      .then((comment) => {
-        console.log(">> Created comment: " + JSON.stringify(comment, null, 4));
-        return comment;
-      })
-      .catch((err) => {
-        console.log(">> Error while creating comment: ", err);
-      });
-};
-
-// Get the comments for a given boards
-exports.findBoardsById = (boardsId) => {
-  return Boards.findByPk(boardsId, { include: ["comments"] })
-      .then((boards) => {
-        return boards;
-      })
-      .catch((err) => {
-        console.log(">> Error while finding boards: ", err);
-      });
-};
-
-// Get the comments for a given comment id
-exports.findCommentById = (id) => {
-  return Comment.findByPk(id, { include: ["boards"] })
-      .then((comment) => {
-        return comment;
-      })
-      .catch((err) => {
-        console.log(">> Error while finding comment: ", err);
-      });
-};
-
-// Get all Boards include comments
-exports.findAll = () => {
-  return Boards.findAll({
-    include: ["comments"],
-  }).then((boards) => {
-    return boards;
-  });
-};
 
 // Create and Save a new Boards
 exports.createBoards = (req, res) => {
@@ -69,128 +21,140 @@ exports.createBoards = (req, res) => {
 
   // Save Boards in the database
   Boards.createBoards(boards)
-    .then(data => {
-      res.send(data);
-    })
-    .catch(err => {
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while creating the Boards."
+      .then(data => {
+        res.send(data);
+      })
+      .catch(err => {
+        res.status(500).send({
+          message:
+              err.message || "Some error occurred while creating the Boards."
+        });
       });
-    });
 };
 
 // Retrieve all Boards from the database.
 exports.findAllBoards = (req, res) => {
   const title = req.query.title;
-  const condition = title ? {title: {[Op.like]: `%${title}%`}} : null;
+  var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
 
   Boards.findAllBoards({ where: condition })
-    .then(data => {
-      res.send(data);
-    })
-    .catch(err => {
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while retrieving boards."
+      .then(data => {
+        res.send(data);
+      })
+      .catch(err => {
+        res.status(500).send({
+          message:
+              err.message || "Some error occurred while retrieving boards."
+        });
       });
-    });
 };
 
-// Find a with an id
+// Find a single Boards with an id
 exports.findOneBoards = (req, res) => {
   const id = req.params.id;
 
   Boards.findByPk(id)
-    .then(data => {
-      res.send(data);
-    })
-    .catch(err => {
-      res.status(500).send({
-        message: "Error retrieving Boards with id=" + id
+      .then(data => {
+        res.send(data);
+      })
+      .catch(err => {
+        res.status(500).send({
+          message: "Error retrieving Boards with id=" + id
+        });
       });
-    });
+};
+// Find a single Boards with an id
+exports.getBoards = (req, res) => {
+    const id = req.params.id;
+
+    Boards.findByPk(id)
+        .then(data => {
+            res.send(data);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: "Error retrieving Boards with id=" + id
+            });
+        });
 };
 
-// Update a by the id in the request
-exports.update = (req, res) => {
+// Update a Boards by the id in the request
+exports.updateBoards = (req, res) => {
   const id = req.params.id;
 
-  Boards.update(req.body, {
+  Boards.updateBoards(req.body, {
     where: { id: id }
   })
-    .then(num => {
-      // eslint-disable-next-line eqeqeq
-      if (num == 1) {
-        res.send({
-          message: "Updated successfully."
+      .then(num => {
+        if (num == 1) {
+          res.send({
+            message: "Boards was updated successfully."
+          });
+        } else {
+          res.send({
+            message: `Cannot update Boards with id=${id}. Maybe Boards was not found or req.body is empty!`
+          });
+        }
+      })
+      .catch(err => {
+        res.status(500).send({
+          message: "Error updating Boards with id=" + id
         });
-      } else {
-        res.send({
-          message: `Cannot update Boards with id=${id}. Maybe Boards was not found or req.body is empty!`
-        });
-      }
-    })
-    .catch(err => {
-      res.status(500).send({
-        message: "Error updating Boards with id=" + id
       });
-    });
 };
 
 // Delete a Boards with the specified id in the request
-exports.delete = (req, res) => {
+exports.deleteBoards = (req, res) => {
   const id = req.params.id;
 
   Boards.destroy({
     where: { id: id }
   })
-    .then(num => {
-      if (num == 1) {
-        res.send({
-          message: "Delete successful!"
+      .then(num => {
+        if (num == 1) {
+          res.send({
+            message: "Boards was deleted successfully!"
+          });
+        } else {
+          res.send({
+            message: `Cannot delete Boards with id=${id}. Maybe Boards was not found!`
+          });
+        }
+      })
+      .catch(err => {
+        res.status(500).send({
+          message: "Could not delete Boards with id=" + id
         });
-      } else {
-        res.send({
-          message: `Cannot delete id=${id}. Please try again`
-        });
-      }
-    })
-    .catch(err => {
-      res.status(500).send({
-        message: "Could not delete with id=" + id
       });
-    });
 };
 
 // Delete all Boards from the database.
-exports.deleteAll = (req, res) => {
+exports.deleteAllBoards = (req, res) => {
   Boards.destroy({
     where: {},
     truncate: false
   })
-    .then(nums => {
-      res.send({ message: `${nums} Boards were deleted successfully!` });
-    })
-    .catch(err => {
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while removing all boards."
+      .then(nums => {
+        res.send({ message: `${nums} Boards were deleted successfully!` });
+      })
+      .catch(err => {
+        res.status(500).send({
+          message:
+              err.message || "Some error occurred while removing all boards."
+        });
       });
-    });
 };
 
 // find all published Boards
-exports.findAllPublished = (req, res) => {
+exports.findAllPublishedBoards = (req, res) => {
   Boards.findAll({ where: { published: true } })
-    .then(data => {
-      res.send(data);
-    })
-    .catch(err => {
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while retrieving boards."
+      .then(data => {
+        res.send(data);
+      })
+      .catch(err => {
+        res.status(500).send({
+          message:
+              err.message || "Some error occurred while retrieving boards."
+        });
       });
-    });
 };
-
