@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import BoardsDataService from "../services/BoardsService";
 import { Link } from "react-router-dom";
+import "./common.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const BoardsList = () => {
     const [boards, setBoards] = useState([]);

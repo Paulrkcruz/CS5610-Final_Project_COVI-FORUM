@@ -37,7 +37,7 @@ const App = () => {
   return (
       <div>
         <nav className="navbar navbar-icon-top navbar-expand-lg navbar-light bg-blue">
-          <Link to={"/home"} className="navbar-brand">
+          <Link to={"/"} className="navbar-brand">
             <a className="navbar-brand">
                 </a>
               CoviForum
@@ -46,7 +46,7 @@ const App = () => {
 
           <div className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <Link to={"/home"} className="nav-link">
+              <Link to={"/"} className="nav-link">
                 Home
               </Link>
             </li>

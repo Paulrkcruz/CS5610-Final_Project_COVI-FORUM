@@ -19,18 +19,21 @@ export default class Profile extends Component {
                     <h3>
                         <strong>{currentUser.username}</strong> Profile
                     </h3>
+                    <p>
+                        <strong>Member Since: </strong>{" "} 2021
+                    </p>
                 </header>
                 <p>
-                    <strong>Token:</strong>{" "}
+                    <strong>Web Token:</strong>{" "}
                     {currentUser.accessToken.substring(0, 20)} ...{" "}
                     {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
                 </p>
                 <p>
-                    <strong>Id:</strong>{" "}
+                    <strong>User ID:</strong>{" "}
                     {currentUser.id}
                 </p>
                 <p>
-                    <strong>Email:</strong>{" "}
+                    <strong>Registered Email Address:</strong>{" "}
                     {currentUser.email}
                 </p>
                 <strong>User Role:</strong>

@@ -29,12 +29,28 @@ const BoardUser = () => {
     }, []);
 
     return (
-        <div className="container">
+        <div className="submit-form">
             <header className="jumbotron">
                 <h3>{content}</h3>
                 <Link to={"/addBoard"} className="nav-link">
-                    Add A Discussion Board
+                    Edit Profile
                 </Link>
+                <Link to={"/addBoard"} className="nav-link">
+                    View All Posted Boards
+                </Link>
+                <Link to={"/addBoard"} className="nav-link">
+                    Search For Boards
+                </Link>
+                <Link to={"/addBoard"} className="nav-link">
+                    Deactivate Membership
+                </Link>
+                <Link to={"/addBoard"} className="nav-link">
+                    About Us
+                </Link>
+                <Link to={"/addBoard"} className="nav-link">
+                    License Terms
+                </Link>
+
             </header>
         </div>
     );
