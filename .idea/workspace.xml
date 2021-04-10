@@ -5,11 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/covid-stats/DataSelector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/covid-stats/DateSlider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/covid-stats/Map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/covid-stats/covidstats.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/covid-stats/covidstats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/detect" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/detect" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/detect-port" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/detect-port" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest-haste-map/node_modules/fsevents/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-haste-map/node_modules/fsevents/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jest-haste-map/node_modules/fsevents/build/Release/fse.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-haste-map/node_modules/fsevents/build/Release/fse.node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/lib/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/lib/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/lib/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/lib/picomatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/lib/picomatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/lib/scan.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/lib/scan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/fsevents/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/fsevents/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/fsevents/build/Release/fse.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/fsevents/build/Release/fse.node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/webpack-dev-server/node_modules/fsevents/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/webpack-dev-server/node_modules/fsevents/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-backend/app/routes/boards.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/routes/boards.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AddBoards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddBoards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Boards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Boards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoardsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-up/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-up/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/home-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/home-screen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/moderator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moderator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +85,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1qMJurAgKlwSs36vqTvep3fkLOR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -62,7 +111,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="15.8.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.37" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/covid-stats" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -71,17 +120,29 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/covid-stats" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/sign-up" />
       <recent name="$PROJECT_DIR$/src/components/sign-in" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/server-backend/node_modules" />
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoviforumApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="coviforum" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.coviforum.coviforum.CoviforumApplication" />
@@ -141,7 +202,7 @@
       <workItem from="1617937804729" duration="3498000" />
       <workItem from="1617944496175" duration="215000" />
       <workItem from="1617944714470" duration="2958000" />
-      <workItem from="1617951184106" duration="1917000" />
+      <workItem from="1617951184106" duration="12309000" />
     </task>
     <servers />
   </component>

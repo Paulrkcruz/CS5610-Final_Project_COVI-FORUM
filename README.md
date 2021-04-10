@@ -1,17 +1,14 @@
 # CS5610 Final Project
-
 This project is called CoviForum - 'A Discussion Forum Board to Discuss the effects of the COVID-19 Pandemic'
 
 ## To Run This Application:
 
 #### Frontend:
-
 Open terminal inside the root folder, enter:
 npm start
 
 #### Backend:
-
-Open another terminal, enter::
+Open another terminal, enter:
 cd server-backend
 node server.js
 
@@ -22,6 +19,7 @@ Type:
 npm run start:all (IN PROGRESS)
 
 ## This project was built utilizing the following API:
+ReactJS is the widely used frontend framework, and JSON Web Token, JWT for short
 
 ### Front-end:
 React 
@@ -48,11 +46,15 @@ MySQL
 
 ### Modules:
 Express 4.17.1
-bcryptjs 2.4.3
 jsonwebtoken 8.5.1
 Sequelize 5.21.3
 MySQL
 
+### 3rd Party API
+Publically Available API
+COVID Stats API based on Location
+Google Maps API
+https://www.google.com/search?q=covid+stats&oq=covid+stats&aqs=chrome..69i57j0i402l2j0i433j0i131i433l2j0i10i131i433j0l2j0i131i433.1816j0j7&sourceid=chrome&ie=UTF-8
 
 # Getting Started with Create React App
 

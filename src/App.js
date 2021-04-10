@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route, Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import "./footer.css";
 import AuthService from "./services/auth.service";
 import Login from "./components/sign-in/login";
 import Register from "./components/sign-up/register";
 import HomeScreen from "./models/home-screen";
+import CovidStats from "../src/covid-stats/covidstats"
 import Profile from "./models/profile";
 import BoardUser from "./models/user";
 import BoardModerator from "./models/moderator";
@@ -55,7 +54,11 @@ const App = () => {
                 New Boards
               </Link>
             </li>
-
+            <li className="nav-item">
+              <Link to={"/covidStats"} className="nav-link">
+                COVID-19 Statistics
+              </Link>
+            </li>
 
 
             {showModeratorBoard && (
@@ -137,6 +140,8 @@ const App = () => {
             <Route exact path={["/", "/boards"]} component={BoardsList} />
             <Route exact path="/add" component={AddBoards} />
             <Route path="/boards/:id" component={Boards} />
+            <Route path="/covidStats" component={CovidStats} />
+
 
           </Switch>
 

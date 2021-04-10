@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 import BoardsDataService from "../services/BoardsService";
-import "./common.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./common.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const AddBoards = () => {
   const initialBoardsState = {

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import BoardsDataService from "../services/BoardsService";
-import "./common.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const Boards = props => {
   const initialBoardsState = {
@@ -142,7 +140,7 @@ const Boards = props => {
       ) : (
         <div>
           <br />
-          <p>Please click on a Boards...</p>
+          <p></p>
         </div>
       )}
     </div>

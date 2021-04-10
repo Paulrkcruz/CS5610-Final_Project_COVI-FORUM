@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BoardsDataService from "../services/BoardsService";
 import { Link } from "react-router-dom";
-import "./common.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const BoardsList = () => {
     const [boards, setBoards] = useState([]);
@@ -103,12 +101,12 @@ const BoardsList = () => {
                     ))}
                 </ul>
 
-                <button
-                    className="m-3 btn btn-sm btn-danger"
-                    onClick={deleteAllBoards}
-                >
-                    Remove All
-                </button>
+                {/*<button*/}
+                {/*    className="m-3 btn btn-sm btn-danger"*/}
+                {/*    onClick={deleteAllBoards}*/}
+                {/*>*/}
+                {/*    Remove All*/}
+                {/*</button>*/}
             </div>
             <div className="col-md-6">
                 {currentBoards ? (
