@@ -77,7 +77,7 @@ class covidstats extends React.Component {
                 <Grid container justify="center"   alignItems="center" spacing={3}>
                     <Grid item xs={8}>
                         <Typography id="titles" variant='h3'>
-                            Visualizing COVID-19 Over Time
+                            Covid-19 Statistics
                         </Typography>
                     </Grid>
                     <Grid item xs={10}>

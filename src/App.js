@@ -38,11 +38,11 @@ const App = () => {
         <nav className="navbar navbar-icon-top navbar-expand-sm navbar-blue bg-light">
           <Link to={"/"} className="navbar-brand">
             <a className="navbar-brand">
+              <img src="././coviforum_icon.png" alt="bug" height={35} width={35} />
+              <b>CoviForum</b>
                 </a>
-              CoviForum
+
           </Link>
-
-
           <div className="navbar-nav mr-auto">
             <li className="nav-item active">
               <Link to={"/"} className="nav-link">
@@ -51,14 +51,12 @@ const App = () => {
             </li>
             <li className="nav-item">
               <Link to={"/add"} className="nav-link">
-                New Boards
+                Post
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to={"/covidStats"} className="nav-link">
-                COVID-19 Statistics
-              </Link>
-            </li>
+            <Link to={"/covidStats"} className="nav-link">
+              Covid-19 Stats
+            </Link>
 
 
             {showModeratorBoard && (
@@ -79,9 +77,7 @@ const App = () => {
 
             {currentUser && (
                 <li className="nav-item">
-                  <Link to={"/user"} className="nav-link">
-                    Preferences
-                  </Link>
+
                 </li>
 
             )}
@@ -100,6 +96,9 @@ const App = () => {
                   </Link>
 
                 </li>
+                <Link to={"/user"} className="nav-link">
+                  Preferences
+                </Link>
                 <li className="nav-item">
                   <a href="/login" className="nav-link" onClick={logOut}>
                     LogOut

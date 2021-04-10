@@ -46,7 +46,7 @@ const AddBoards = () => {
   return (
 
       <div className="submit-form">
-        <h3>Post in the Boards</h3>
+        <h3>New Boards Post</h3>
       {submitted ? (
         <div>
           <h4>You submitted successfully!</h4>
