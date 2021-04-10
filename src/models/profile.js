@@ -13,7 +13,7 @@ export default class Profile extends Component {
         const { currentUser } = this.state;
 
         return (
-            <div className="container">
+            <div className="submit-form">
                 <header className="jumbotron">
                     <h3>
                         <strong>{currentUser.username}</strong> Profile
@@ -38,7 +38,7 @@ export default class Profile extends Component {
                 <strong>User Role:</strong>
                 <ul>
                     {currentUser.roles &&
-                    currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}
+                    currentUser.roles.map((role, index) => <li key={index}>{role}</li>)} USER_ROLE
                 </ul>
             </div>
         );

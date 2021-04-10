@@ -109,9 +109,7 @@ class covidstats extends React.Component {
                     </Grid>
                     <Grid item xs={8}>
                         <Typography id="title" variant='caption'>
-                            This is a depiction of the spread of COVID-19 over time. We rely on the Johns Hopkins CSSE Data Repository, which is
-                            updated once a day at around 23:59 UTC. For that reason, the most recent data our slider allows users to select is
-                            yesterday's.
+                            Data Source: Johns Hopkins CSSE Data Repository.
                         </Typography>
                     </Grid>
                 </Grid>

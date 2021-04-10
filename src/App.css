@@ -102,6 +102,13 @@ footer {
   float:right;
   right: 0;
 }
+.navbar-center {
+  position: center;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
 .copyright {
   position: relative;
   bottom: 0;
