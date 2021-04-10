@@ -116,5 +116,13 @@ footer {
   position: relative;
 }
 .form-control{
-  
+  position: relative;
+  max-width: 250px;
+
+}
+.input-group-append{
+
+}
+.input-group mb-3{
+
 }
