@@ -5,53 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/covid-stats/DataSelector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/covid-stats/DateSlider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/covid-stats/Map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/covid-stats/covidstats.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/covid-stats/covidstats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/detect" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/detect" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/detect-port" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/detect-port" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-haste-map/node_modules/fsevents/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-haste-map/node_modules/fsevents/build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-haste-map/node_modules/fsevents/build/Release/fse.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jest-haste-map/node_modules/fsevents/build/Release/fse.node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/lib/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/lib/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/lib/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/lib/picomatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/lib/picomatch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/lib/scan.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/lib/scan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/picomatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/picomatch/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/fsevents/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/fsevents/build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/fsevents/build/Release/fse.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/watchpack-chokidar2/node_modules/fsevents/build/Release/fse.node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/webpack-dev-server/node_modules/fsevents/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/webpack-dev-server/node_modules/fsevents/build/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/routes/boards.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/routes/boards.routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddBoards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddBoards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Boards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Boards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoardsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-in/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-in/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-up/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-up/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/home-screen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/home-screen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/moderator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moderator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/covid-stats/DataSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/covid-stats/DataSelector.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +159,7 @@
       <workItem from="1617937804729" duration="3498000" />
       <workItem from="1617944496175" duration="215000" />
       <workItem from="1617944714470" duration="2958000" />
-      <workItem from="1617951184106" duration="12309000" />
+      <workItem from="1617951184106" duration="12822000" />
     </task>
     <servers />
   </component>

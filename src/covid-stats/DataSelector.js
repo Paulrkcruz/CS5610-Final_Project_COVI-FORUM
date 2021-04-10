@@ -20,7 +20,7 @@ export default class DataSelector extends React.Component {
 	      />
 	      <FormControlLabel
 	        control={<Checkbox checked={this.props.deathOn} onChange={this.props.toggleDeathData} name="checkedC" style={{color:'black'}}/>}
-	        label="Dead"
+	        label="Deaths"
 	      />
 	    </FormGroup>
     )

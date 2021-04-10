@@ -111,4 +111,10 @@ footer {
   text-align: center;
   background: #fff;
 }
-
+.list-row{
+  text-align: center;
+  position: relative;
+}
+.form-control{
+  
+}
