@@ -74,7 +74,7 @@ const AddBoards = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description">Your Story:</label>
             <input
               type="text"
               className="form-control"

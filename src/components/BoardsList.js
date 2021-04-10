@@ -86,7 +86,7 @@ const BoardsList = () => {
                 </div>
             </div>
             <div className="col-md-6">
-                <h4>Boards List</h4>
+                <h4>Most Popular Boards</h4>
 
                 <ul className="list-group">
                     {boards &&
@@ -143,7 +143,6 @@ const BoardsList = () => {
                 ) : (
                     <div>
                         <br />
-                        <p>Please click on a Boards...</p>
                     </div>
                 )}
             </div>

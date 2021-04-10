@@ -6,16 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AddBoards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddBoards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoardsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-in/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-up/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/moderator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/moderator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +141,7 @@
       <workItem from="1617937804729" duration="3498000" />
       <workItem from="1617944496175" duration="215000" />
       <workItem from="1617944714470" duration="2958000" />
-      <workItem from="1617951184106" duration="623000" />
+      <workItem from="1617951184106" duration="1917000" />
     </task>
     <servers />
   </component>
