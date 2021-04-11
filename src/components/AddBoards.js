@@ -17,7 +17,7 @@ const AddBoards = () => {
   };
 
   const saveBoards = () => {
-    const data = {
+    var data = {
       title: boards.title,
       description: boards.description
     };
@@ -44,9 +44,8 @@ const AddBoards = () => {
   };
 
   return (
-
-      <div className="submit-form">
-        <h3>New Boards Post</h3>
+    <div className="submit-form">
+      <h3>New Boards Post</h3>
       {submitted ? (
         <div>
           <h4>You submitted successfully!</h4>
@@ -70,7 +69,7 @@ const AddBoards = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="description">Your Story:</label>
+            <label htmlFor="description">Your Story</label>
             <input
               type="text"
               className="form-control"

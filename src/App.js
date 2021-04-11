@@ -4,7 +4,6 @@ import "./App.css";
 import AuthService from "./services/auth.service";
 import Login from "./components/sign-in/login";
 import Register from "./components/sign-up/register";
-import HomeScreen from "./models/home-screen";
 import CovidStats from "../src/covid-stats/covidstats"
 import Profile from "./models/profile";
 import BoardUser from "./models/user";
@@ -38,14 +37,14 @@ const App = () => {
         <nav className="navbar navbar-icon-top navbar-expand-sm navbar-blue bg-light">
           <Link to={"/"} className="navbar-brand">
             <a className="navbar-brand">
-              <img src="././coviforum_icon.png" alt="bug" height={35} width={35} />
+              <img src="././coviforum_icon.png" alt="logo" height={35} width={35} />
               <b>CoviForum</b>
                 </a>
 
           </Link>
           <div className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <Link to={"/"} className="nav-link">
+              <Link to={"/boards"} className="nav-link">
                 Home
               </Link>
             </li>

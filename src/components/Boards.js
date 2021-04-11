@@ -12,7 +12,7 @@ const Boards = props => {
   const [message, setMessage] = useState("");
 
   const getBoards = id => {
-    BoardsDataService.getBoards(id)
+    BoardsDataService.get(id)
       .then(response => {
         setCurrentBoards(response.data);
         console.log(response.data);
@@ -39,7 +39,7 @@ const Boards = props => {
       published: status
     };
 
-    BoardsDataService.updateBoards(currentBoards.id, data)
+    BoardsDataService.update(currentBoards.id, data)
       .then(response => {
         setCurrentBoards({ ...currentBoards, published: status });
         console.log(response.data);
@@ -75,7 +75,7 @@ const Boards = props => {
     <div>
       {currentBoards ? (
         <div className="edit-form">
-          <h4>Boards</h4>
+          <h4>Most Popular Boards</h4>
           <form>
             <div className="form-group">
               <label htmlFor="title">Title</label>
@@ -140,7 +140,7 @@ const Boards = props => {
       ) : (
         <div>
           <br />
-          <p></p>
+          <p>Displaying Boards</p>
         </div>
       )}
     </div>

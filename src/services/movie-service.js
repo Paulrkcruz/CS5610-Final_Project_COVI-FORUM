@@ -8,7 +8,6 @@ const findMovieByImdbID = (imdbID) => {
         .then(response => response.json())
 }
 
-
 export default {
     findMoviesByTitle, findMovieByImdbID
 }
