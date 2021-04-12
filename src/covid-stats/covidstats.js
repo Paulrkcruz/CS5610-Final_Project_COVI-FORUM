@@ -107,7 +107,7 @@ class covidstats extends React.Component {
                             deathOn={this.state.deathOn}
                         />
                     </Grid>
-                    <Grid item xs={8}>
+                    <Grid item xs={4}>
                         <Typography id="title" variant='caption'>
                             Data Source: Johns Hopkins CSSE Data Repository.
                         </Typography>
