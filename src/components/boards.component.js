@@ -119,7 +119,7 @@ export default class Boards extends Component {
     return (
       <div>
         {currentBoards ? (
-          <div className="navbar-expand">
+          <div className="edit-form">
             <h4>Edit Your Story</h4>
             <form>
               <div className="form-group">
@@ -143,7 +143,7 @@ export default class Boards extends Component {
                 />
               </div>
 
-              <div className="figure-caption">
+              <div className="form-group">
                 <label>
                   <strong>Status:</strong>
                 </label>
@@ -153,14 +153,14 @@ export default class Boards extends Component {
 
             {currentBoards.published ? (
               <button
-                className="leaflet-control-attribution"
+                className="badge badge-primary mr-2"
                 onClick={() => this.updatePublished(false)}
               >
                 UnPublish
               </button>
             ) : (
               <button
-                className="leaflet-control-attribution"
+                className="badge badge-primary mr-2"
                 onClick={() => this.updatePublished(true)}
               >
                 Publish
@@ -168,7 +168,7 @@ export default class Boards extends Component {
             )}
 
             <button
-              className="leaflet-control-attribution"
+              className="badge badge-primary mr-2"
               onClick={this.deleteBoards}
             >
               Delete
@@ -176,7 +176,7 @@ export default class Boards extends Component {
 
             <button
               type="submit"
-              className="leaflet-control-attribution"
+              className="badge badge-success"
               onClick={this.updateBoards}
             >
               Update

@@ -208,7 +208,7 @@ export default class BoardsList extends Component {
           {/*  Remove All*/}
           {/*</button>*/}
         </div>
-        <div className="col-md-6 modal-static modal-open">
+        <div className="col-md-6">
           {currentBoards ? (
             <div>
               <h4>Boards</h4>
@@ -233,7 +233,7 @@ export default class BoardsList extends Component {
               <div className="alert-link">
               <Link
                 to={"/boards/" + currentBoards.id}
-                className="edit-boards"
+                className="badge badge-warning"
               >
                 Edit
               </Link>

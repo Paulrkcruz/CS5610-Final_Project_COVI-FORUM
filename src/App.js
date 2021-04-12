@@ -98,7 +98,7 @@ const App = () => {
 
                 </li>
                 <Link to={"/user"} className="nav-link">
-                  Preferences
+                  Settings
                 </Link>
                 <li className="nav-item">
                   <a href="/login" className="nav-link" onClick={logOut}>

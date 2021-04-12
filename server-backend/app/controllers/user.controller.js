@@ -3,7 +3,7 @@ exports.allAccess = (req, res) => {
 };
 
 exports.userBoard = (req, res) => {
-  res.status(200).send("Preferences");
+  res.status(200).send("Settings");
 };
 
 exports.adminBoard = (req, res) => {

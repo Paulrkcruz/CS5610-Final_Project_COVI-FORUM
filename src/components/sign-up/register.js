@@ -2,7 +2,9 @@ import React, { useState, useRef } from "react";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
-import { isEmail } from "validator";
+import validator from 'validator';
+import isEmail from 'validator/es/lib/isEmail';
+
 
 import AuthService from "../../services/auth.service";
 
@@ -78,6 +80,7 @@ const Register = (props) => {
     setSuccessful(false);
 
     form.current.validateAll();
+
 
     if (checkBtn.current.context._errors.length === 0) {
       AuthService.register(username, email, password).then(
