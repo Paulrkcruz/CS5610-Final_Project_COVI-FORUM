@@ -2,8 +2,23 @@ const db = require("../models");
 const Boards = db.boards;
 const Op = db.Sequelize.Op;
 
+const getPagination = (page, size) => {
+  const limit = size ? +size : 3;
+  const offset = page ? page * limit : 0;
+
+  return { limit, offset };
+};
+
+const getPagingData = (data, page, limit) => {
+  const { count: totalItems, rows: boards } = data;
+  const currentPage = page ? +page : 0;
+  const totalPages = Math.ceil(totalItems / limit);
+
+  return { totalItems, boards, totalPages, currentPage };
+};
+
 // Create and Save a new Boards
-exports.createBoards = (req, res) => {
+exports.create = (req, res) => {
   // Validate request
   if (!req.body.title) {
     res.status(400).send({
@@ -20,141 +35,134 @@ exports.createBoards = (req, res) => {
   };
 
   // Save Boards in the database
-  Boards.createBoards(boards)
-      .then(data => {
-        res.send(data);
-      })
-      .catch(err => {
-        res.status(500).send({
-          message:
-              err.message || "Some error occurred while creating the Boards."
-        });
+  Boards.create(boards)
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while creating the Boards."
       });
+    });
 };
 
 // Retrieve all Boards from the database.
 exports.findAllBoards = (req, res) => {
-  const title = req.query.title;
+  const { page, size, title } = req.query;
   var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
 
-  Boards.findAllBoards({ where: condition })
-      .then(data => {
-        res.send(data);
-      })
-      .catch(err => {
-        res.status(500).send({
-          message:
-              err.message || "Some error occurred while retrieving boards."
-        });
+  const { limit, offset } = getPagination(page, size);
+
+  Boards.findAndCountAll({ where: condition, limit, offset })
+    .then(data => {
+      const response = getPagingData(data, page, limit);
+      res.send(response);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving boards."
       });
+    });
 };
 
 // Find a single Boards with an id
-exports.findOneBoards = (req, res) => {
+exports.findOne = (req, res) => {
   const id = req.params.id;
 
   Boards.findByPk(id)
-      .then(data => {
-        res.send(data);
-      })
-      .catch(err => {
-        res.status(500).send({
-          message: "Error retrieving Boards with id=" + id
-        });
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: "Error retrieving Boards with id=" + id
       });
-};
-// Find a single Boards with an id
-exports.getBoards = (req, res) => {
-    const id = req.params.id;
-
-    Boards.findByPk(id)
-        .then(data => {
-            res.send(data);
-        })
-        .catch(err => {
-            res.status(500).send({
-                message: "Error retrieving Boards with id=" + id
-            });
-        });
+    });
 };
 
 // Update a Boards by the id in the request
-exports.updateBoards = (req, res) => {
+exports.update = (req, res) => {
   const id = req.params.id;
 
-  Boards.updateBoards(req.body, {
+  Boards.update(req.body, {
     where: { id: id }
   })
-      .then(num => {
-        if (num == 1) {
-          res.send({
-            message: "Boards was updated successfully."
-          });
-        } else {
-          res.send({
-            message: `Cannot update Boards with id=${id}. Maybe Boards was not found or req.body is empty!`
-          });
-        }
-      })
-      .catch(err => {
-        res.status(500).send({
-          message: "Error updating Boards with id=" + id
+    .then(num => {
+      if (num == 1) {
+        res.send({
+          message: "Boards was updated successfully."
         });
+      } else {
+        res.send({
+          message: `Cannot update Boards with id=${id}. Maybe Boards was not found or req.body is empty!`
+        });
+      }
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: "Error updating Boards with id=" + id
       });
+    });
 };
 
 // Delete a Boards with the specified id in the request
-exports.deleteBoards = (req, res) => {
+exports.delete = (req, res) => {
   const id = req.params.id;
 
   Boards.destroy({
     where: { id: id }
   })
-      .then(num => {
-        if (num == 1) {
-          res.send({
-            message: "Boards was deleted successfully!"
-          });
-        } else {
-          res.send({
-            message: `Cannot delete Boards with id=${id}. Maybe Boards was not found!`
-          });
-        }
-      })
-      .catch(err => {
-        res.status(500).send({
-          message: "Could not delete Boards with id=" + id
+    .then(num => {
+      if (num == 1) {
+        res.send({
+          message: "Boards was deleted successfully!"
         });
+      } else {
+        res.send({
+          message: `Cannot delete Boards with id=${id}. Maybe Boards was not found!`
+        });
+      }
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: "Could not delete Boards with id=" + id
       });
+    });
 };
 
 // Delete all Boards from the database.
-exports.deleteAllBoards = (req, res) => {
+exports.deleteAll = (req, res) => {
   Boards.destroy({
     where: {},
     truncate: false
   })
-      .then(nums => {
-        res.send({ message: `${nums} Boards were deleted successfully!` });
-      })
-      .catch(err => {
-        res.status(500).send({
-          message:
-              err.message || "Some error occurred while removing all boards."
-        });
+    .then(nums => {
+      res.send({ message: `${nums} Boards were deleted successfully!` });
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while removing all boards."
       });
+    });
 };
 
 // find all published Boards
-exports.findAllPublishedBoards = (req, res) => {
-  Boards.findAll({ where: { published: true } })
-      .then(data => {
-        res.send(data);
-      })
-      .catch(err => {
-        res.status(500).send({
-          message:
-              err.message || "Some error occurred while retrieving boards."
-        });
+exports.findAllPublished = (req, res) => {
+  const { page, size } = req.query;
+  const { limit, offset } = getPagination(page, size);
+
+  Boards.findAndCountAll({ where: { published: true }, limit, offset })
+    .then(data => {
+      const response = getPagingData(data, page, limit);
+      res.send(response);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving boards."
       });
+    });
 };

@@ -23,9 +23,9 @@
     "cors": "^2.8.5",
     "exports": "^0.0.1",
     "express": "^4.17.1",
-    "mysql2": "^2.0.2",
+    "mysql2": "^2.2.5",
     "react-validation": "^3.0.7",
-    "sequelize": "^5.21.2"
+    "sequelize": "^5.22.4"
   },
   "devDependencies": {
     "jsonwebtoken": "^8.5.1"

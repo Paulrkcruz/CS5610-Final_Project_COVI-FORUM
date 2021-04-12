@@ -22,13 +22,6 @@ db.sequelize = sequelize;
 db.boards = require("../models/boards.model.js")(sequelize, Sequelize);
 db.user = require("../models/user.model.js")(sequelize, Sequelize);
 db.role = require("../models/role.model.js")(sequelize, Sequelize);
-db.comments = require("./comment.model.js")(sequelize, Sequelize);
-
-db.boards.hasMany(db.comments, { as: "comments" });
-db.comments.belongsTo(db.boards, {
-    foreignKey: "boardsId",
-    as: "boards",
-});
 
 db.role.belongsToMany(db.user, {
     through: "user_roles",

@@ -9,9 +9,9 @@ import Profile from "./models/profile";
 import BoardUser from "./models/user";
 import BoardModerator from "./models/moderator";
 import BoardAdmin from "./models/admin";
-import AddBoards from "./components/AddBoards";
-import Boards from "./components/Boards";
-import BoardsList from "./components/BoardsList";
+import AddBoards from "./components/add-boards";
+import Boards from "./components/boards.component";
+import BoardsList from "./components/boards.list";
 
 const App = () => {
   const [showModeratorBoard, setShowModeratorBoard] = useState(false);
@@ -45,7 +45,7 @@ const App = () => {
           <div className="navbar-nav mr-auto">
             <li className="nav-item active">
               <Link to={"/boards"} className="nav-link">
-                Home
+                Boards
               </Link>
             </li>
             <li className="nav-item">

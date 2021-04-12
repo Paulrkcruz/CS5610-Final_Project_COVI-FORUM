@@ -25,7 +25,7 @@ const BoardUser = () => {
     }, []);
 
     return (
-        <div className="submit-form">
+        <div className="navbar-right">
             <header className="jumbotron">
                 <h3>{content}</h3>
                 <Link to={"/addBoard"} className="nav-link">

@@ -1,9 +1,8 @@
 const jwt = require("jsonwebtoken");
 const config = require("../config/auth.config.js");
-const db = require("../config/db.config");
-const User = db.USER;
+const db = require("../models");
+const User = db.user;
 
-// eslint-disable-next-line no-undef
 verifyToken = (req, res, next) => {
   let token = req.headers["x-access-token"];
 
@@ -24,7 +23,6 @@ verifyToken = (req, res, next) => {
   });
 };
 
-// eslint-disable-next-line no-undef
 isAdmin = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
@@ -36,14 +34,13 @@ isAdmin = (req, res, next) => {
       }
 
       res.status(403).send({
-        message: "Requires Admin Role!"
+        message: "Require Admin Role!"
       });
       return;
     });
   });
 };
 
-// eslint-disable-next-line no-undef
 isModerator = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
@@ -55,13 +52,12 @@ isModerator = (req, res, next) => {
       }
 
       res.status(403).send({
-        message: "Requires Moderator Role!"
+        message: "Require Moderator Role!"
       });
     });
   });
 };
 
-// eslint-disable-next-line no-undef
 isModeratorOrAdmin = (req, res, next) => {
   User.findByPk(req.userId).then(user => {
     user.getRoles().then(roles => {
@@ -78,20 +74,16 @@ isModeratorOrAdmin = (req, res, next) => {
       }
 
       res.status(403).send({
-        message: "Requires Moderator or Admin Role!"
+        message: "Require Moderator or Admin Role!"
       });
     });
   });
 };
 
 const authJwt = {
-  // eslint-disable-next-line no-undef
   verifyToken: verifyToken,
-  // eslint-disable-next-line no-undef
   isAdmin: isAdmin,
-  // eslint-disable-next-line no-undef
   isModerator: isModerator,
-  // eslint-disable-next-line no-undef
   isModeratorOrAdmin: isModeratorOrAdmin
 };
 module.exports = authJwt;
