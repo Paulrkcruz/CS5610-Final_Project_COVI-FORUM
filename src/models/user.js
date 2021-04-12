@@ -27,7 +27,7 @@ const BoardUser = () => {
     return (
         <div className="navbar-right">
             <header className="jumbotron">
-                <h3>{content}</h3>
+                <h3>Settings</h3>
                 <Link to={"/addBoard"} className="nav-link">
                     Edit Profile
                 </Link>
