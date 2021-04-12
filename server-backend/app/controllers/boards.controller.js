@@ -68,7 +68,7 @@ exports.findAllBoards = (req, res) => {
 };
 
 // Find a single Boards with an id
-exports.findOne = (req, res) => {
+exports.findOneBoards = (req, res) => {
   const id = req.params.id;
 
   Boards.findByPk(id)

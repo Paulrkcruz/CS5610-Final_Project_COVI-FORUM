@@ -22,10 +22,10 @@ export default class BoardsList extends Component {
 
       page: 1,
       count: 0,
-      pageSize: 12,
+      pageSize: 11,
     };
 
-    this.pageSizes = [3, 6, 9, 12, 20, 50, 100];
+    this.pageSizes = [3, 6, 9, 11];
   }
 
   componentDidMount() {
@@ -147,7 +147,7 @@ export default class BoardsList extends Component {
               placeholder="Search by title"
               value={searchTitle}
               onChange={this.onChangeSearchTitle}
-            />
+            /><br></br>
             <div className="input-group-append">
               <button
                 className="btn btn-outline-secondary"

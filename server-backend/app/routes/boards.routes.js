@@ -13,7 +13,7 @@ module.exports = app => {
   router.get("/published", boards.findAllPublished);
 
   // Retrieve a single Boards with id
-  router.get("/:id", boards.findOne);
+  router.get("/:id", boards.findOneBoards);
 
   // Update a Boards with id
   router.put("/:id", boards.update);

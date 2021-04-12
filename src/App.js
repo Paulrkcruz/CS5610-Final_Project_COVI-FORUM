@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route, Link } from "react-router-dom";
-import "./App.css";
 import AuthService from "./services/auth.service";
 import Login from "./components/sign-in/login";
 import Register from "./components/sign-up/register";
@@ -12,6 +11,8 @@ import BoardAdmin from "./models/admin";
 import AddBoards from "./components/add-boards";
 import Boards from "./components/boards.component";
 import BoardsList from "./components/boards.list";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 const App = () => {
   const [showModeratorBoard, setShowModeratorBoard] = useState(false);
@@ -38,6 +39,7 @@ const App = () => {
           <Link to={"/"} className="navbar-brand">
             <a className="navbar-brand">
               <img src="././coviforum_icon.png" alt="logo" height={35} width={35} />
+
               <b>CoviForum</b>
                 </a>
 
