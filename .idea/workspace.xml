@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/config/db.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/config/db.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +162,7 @@
       <workItem from="1617944714470" duration="2958000" />
       <workItem from="1617951184106" duration="32427000" />
       <workItem from="1618120270308" duration="22357000" />
-      <workItem from="1618197248522" duration="10628000" />
+      <workItem from="1618197248522" duration="11252000" />
     </task>
     <servers />
   </component>
