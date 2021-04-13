@@ -5,12 +5,23 @@ This project is called CoviForum - 'A Discussion Forum Board to Discuss the effe
 
 https://coviforum.herokuapp.com/
 
-## Heroku MySQL Hosting:
+#### ClearDB-MySQL Setup
+heroku config | grep CLEARDB_COPPER_URL
 
-https://coviforumdb-nodejs-mysql.herokuapp.com/ 
+mysql://b433a5a4586959:afead08f@us-cdbr-east-03.cleardb.com/heroku_d12c9954cf94e81?reconnect=true
 
-https://git.heroku.com/coviforumdb-nodejs-mysql.git
+heroku config:set CLEARDB_COPPER_URL='mysql://adffdadf2341:adf4234@us-cdbr-east.cleardb.com/heroku_db?reconnect=true'
 
+Change db.config.js from LOCAL MySQL WorkBench to:
+module.exports = {
+  HOST: "us-cdbr-east-03.cleardb.com",
+  USER: "b433a5a4586959",
+  PASSWORD: "afead08f",
+  DB: "heroku_d12c9954cf94e81"
+};
+
+### Heroku Addons:
+ClearDB MySQL
 
 ## To Run This Application:
 
