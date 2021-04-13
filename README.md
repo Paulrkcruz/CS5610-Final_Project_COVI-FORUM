@@ -7,7 +7,7 @@ https://coviforum.herokuapp.com/
 
 ## Activate Node/Express Server on Heroku
 
-Heroku run node server-backend/app/server.js
+heroku run node server-backend/app/server.js
 
 #### ClearDB-MySQL Setup
 heroku config | grep CLEARDB_COPPER_URL
