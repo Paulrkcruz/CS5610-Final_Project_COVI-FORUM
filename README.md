@@ -20,6 +20,10 @@ module.exports = {
   DB: "heroku_d12c9954cf94e81"
 };
 
+Add Tables:
+
+mysql --host=us-cdbr-east-03.cleardb.com --user=b433a5a4586959 --password=afead08f --reconnect heroku_d12c9954cf94e81
+
 ### Heroku Addons:
 ClearDB MySQL
 
