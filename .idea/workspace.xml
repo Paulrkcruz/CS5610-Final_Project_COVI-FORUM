@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/add-boards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/boards.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/boards.list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/boards.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.bin/copyfiles" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.bin/copyup" beforeDir="false" />
@@ -15969,14 +15965,13 @@
       <change beforePath="$PROJECT_DIR$/node_modules/node-eta/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/node-eta/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/node-eta/tests/manual.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/browser.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/lib/index.es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/lib/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/lib/index.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/node-object-hash/CHANGELOG.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/node-object-hash/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/node-object-hash/README.md" beforeDir="false" />
@@ -21382,40 +21377,8 @@
       <change beforePath="$PROJECT_DIR$/node_modules/zwitch/license" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/zwitch/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/zwitch/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-backend/app/config/db.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/config/db.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/controllers/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/controllers/boards.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/controllers/boards.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/middleware/authJwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/middleware/authJwt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/middleware/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/middleware/verifySignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/middleware/verifySignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/models/comment.model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/models/role.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/models/role.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/routes/auth.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/routes/boards.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/routes/boards.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/routes/user.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddBoards.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Boards.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BoardsList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-in/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-up/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/BoardsService.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth-header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth-header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21496,15 +21459,13 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -21569,7 +21530,8 @@
       <workItem from="1617944496175" duration="215000" />
       <workItem from="1617944714470" duration="2958000" />
       <workItem from="1617951184106" duration="32427000" />
-      <workItem from="1618120270308" duration="21757000" />
+      <workItem from="1618120270308" duration="22357000" />
+      <workItem from="1618197248522" duration="9132000" />
     </task>
     <servers />
   </component>

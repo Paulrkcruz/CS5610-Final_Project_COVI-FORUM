@@ -1,6 +1,17 @@
 # CS5610 Final Project
 This project is called CoviForum - 'A Discussion Forum Board to Discuss the effects of the COVID-19 Pandemic'
 
+## Heroku Hosting:
+
+https://coviforum.herokuapp.com/
+
+## Heroku MySQL Hosting:
+
+https://coviforumdb-nodejs-mysql.herokuapp.com/ 
+
+https://git.heroku.com/coviforumdb-nodejs-mysql.git
+
+
 ## To Run This Application:
 
 #### Frontend:
