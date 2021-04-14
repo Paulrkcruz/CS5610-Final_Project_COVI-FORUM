@@ -33,7 +33,7 @@ mysql --host=us-cdbr-east-03.cleardb.com --user=b433a5a4586959 --password=afead0
 ### Heroku Addons:
 ClearDB MySQL
 
-## To Run This Application:
+## To Run This Application Locally:
 
 #### Frontend:
 Open terminal inside the root folder, enter:
