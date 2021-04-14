@@ -5,8 +5,10 @@ This project is called CoviForum - 'A Discussion Forum Board to Discuss the effe
 
 https://coviforum.herokuapp.com/
 
-## Activate Node/Express Server on Heroku
+## Start Heroku
+heroku local web
 
+## Start Node/Express Server on Heroku
 heroku run node server-backend/app/server.js
 
 #### ClearDB-MySQL Setup
