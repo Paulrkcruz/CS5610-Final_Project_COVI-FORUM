@@ -1,11 +1,11 @@
 const environment = {};
 
 environment["development"] = {
-  api: "https://webdev-forum-backend.herokuapp.com",
+  api: "https://coviforum.herokuapp.com/",
 };
 
 environment["production"] = {
-  api: "https://webdev-forum-backend.herokuapp.com",
+  api: "https://coviforum.herokuapp.com/",
 };
 
 export default environment;

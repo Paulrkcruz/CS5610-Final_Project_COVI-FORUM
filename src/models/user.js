@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Switch, Route, Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import UserService from "../services/user.service";
 
 const BoardUser = () => {
@@ -25,28 +24,9 @@ const BoardUser = () => {
     }, []);
 
     return (
-        <div className="navbar-right">
+        <div className="container">
             <header className="jumbotron">
-                <h3>Settings</h3>
-                <Link to={"/addBoard"} className="nav-link">
-                    Edit Profile
-                </Link>
-                <Link to={"/addBoard"} className="nav-link">
-                    View All Posted Boards
-                </Link>
-                <Link to={"/addBoard"} className="nav-link">
-                    Search For Boards
-                </Link>
-                <Link to={"/addBoard"} className="nav-link">
-                    Deactivate Membership
-                </Link>
-                <Link to={"/addBoard"} className="nav-link">
-                    About Us
-                </Link>
-                <Link to={"/addBoard"} className="nav-link">
-                    License Terms
-                </Link>
-
+                <h3>{content}</h3>
             </header>
         </div>
     );

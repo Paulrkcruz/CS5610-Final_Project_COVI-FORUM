@@ -41,7 +41,7 @@ const App = () => {
               <img src="././coviforum_icon.png" alt="logo" height={35} width={35} />
 
               <b>CoviForum</b>
-                </a>
+            </a>
 
           </Link>
           <div className="navbar-nav mr-auto">
@@ -87,24 +87,24 @@ const App = () => {
           {currentUser ? (
 
               <div className="navbar-right">
-              <div className="navbar-nav">
+                <div className="navbar-nav">
 
-                <li className="nav-item">
+                  <li className="nav-item">
 
 
-                  <Link to={"/profile"} className="nav-link">
-                   Welcome, {currentUser.username}
+                    <Link to={"/profile"} className="nav-link">
+                      Welcome, {currentUser.username}
+                    </Link>
+
+                  </li>
+                  <Link to={"/user"} className="nav-link">
+                    Settings
                   </Link>
-
-                </li>
-                <Link to={"/user"} className="nav-link">
-                  Settings
-                </Link>
-                <li className="nav-item">
-                  <a href="/login" className="nav-link" onClick={logOut}>
-                    LogOut
-                  </a>
-                </li></div>
+                  <li className="nav-item">
+                    <a href="/login" className="nav-link" onClick={logOut}>
+                      LogOut
+                    </a>
+                  </li></div>
 
               </div>
 
