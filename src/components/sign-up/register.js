@@ -3,7 +3,6 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import isEmail from 'validator/lib/isEmail';
-import validateAll from "react-validation";
 import AuthService from "../../services/auth.service";
 
 const required = (value) => {
@@ -72,12 +71,11 @@ const Register = (props) => {
     };
 
     const handleRegister = (e) => {
+        // form.current.validateAll();
         e.preventDefault();
-
-        setMessage("");
+        setMessage("Success! Your Account has been Created. Please Login!");
         setSuccessful(false);
 
-        form.current.validateAll();
 
         if (checkBtn.current.context._errors.length === 0) {
             AuthService.register(username, email, password).then(
@@ -138,6 +136,18 @@ const Register = (props) => {
 
                             <div className="form-group">
                                 <label htmlFor="password">Password</label>
+                                <Input
+                                    type="password"
+                                    className="form-control"
+                                    name="password"
+                                    value={password}
+                                    onChange={onChangePassword}
+                                    validations={[required, vpassword]}
+                                />
+                            </div>
+
+                            <div className="form-group">
+                                <label htmlFor="password">Re-enter Password</label>
                                 <Input
                                     type="password"
                                     className="form-control"

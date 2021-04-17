@@ -36,7 +36,7 @@ const App = () => {
 
   return (
       <div>
-        <nav className="navbar navbar-icon-top navbar-expand-sm navbar-blue bg-light">
+        <nav className="navbar navbar-icon-top navbar-expand-sm navbar-black bg-light">
           <Link to={"/"} className="navbar-brand">
             <a className="navbar-brand">
               <img src="././coviforum_icon.png" alt="logo" height={35} width={35} />

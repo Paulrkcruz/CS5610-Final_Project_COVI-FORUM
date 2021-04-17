@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component, useState} from "react";
 import BoardsDataService from "../services/boards.service";
 import { Link } from "react-router-dom";
 import Pagination from "@material-ui/lab/Pagination";
@@ -27,7 +27,6 @@ export default class BoardsList extends Component {
 
     this.pageSizes = [3, 6, 9, 10];
   }
-
 
   componentDidMount() {
     this.retrieveBoards();
