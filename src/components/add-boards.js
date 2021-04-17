@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import BoardsDataService from "../services/boards.service";
+import {Route, Switch} from "react-router-dom";
+import { Link } from 'react-router-dom'
+import Button from '@material-ui/core/Button';
+import BoardsList from "./boards.list";
 
 export default class AddBoards extends Component {
   constructor(props) {
@@ -75,10 +79,13 @@ export default class AddBoards extends Component {
             <button className="btn btn-success" onClick={this.newBoards}>
               Post again!
             </button>
+
             <div className="divider"/>
-            <button className="btn btn-success" onClick={this.newBoards}>
-              Back
-            </button>
+            <Link to="/boards">
+              <button type="button" className="btn btn-success">
+                Home
+              </button>
+            </Link>
           </div>
         ) : (
           <div>
@@ -109,15 +116,24 @@ export default class AddBoards extends Component {
               />
             </div>
             <br></br>
-            <button onClick={this.saveBoards} className="btn btn-success">
-              Submit
-            </button>
+            <Link>
+              <button type="button" onClick={this.saveBoards} className="btn btn-success">
+                Submit
+              </button>
+            </Link>
             <div className="divider"/>
-            <button onClick={this.saveBoards} className="btn btn-success">
-              Cancel
-            </button>
+            <Link to="/boards">
+              <button type="button" className="btn btn-success">
+                Cancel
+              </button>
+            </Link>
+
           </div>
+
         )}
+        <Switch>
+          <Route exact path={["/", "/boards"]} component={BoardsList} />
+        </Switch>
       </div>
     );
   }

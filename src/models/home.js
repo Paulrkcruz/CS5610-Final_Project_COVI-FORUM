@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import AddBoards from "./../components/AddBoards";
-import Boards from "./../components/Boards";
-import BoardsList from "./../components/BoardsList";
+import AddBoards from "./../components/add-boards";
+import Boards from "./../components/boards.component";
+import BoardsList from "./../components/boards.list_pub";
 import { Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import UserService from "../services/user.service";
 
-const HomeScreen = () => {
+const Home = () => {
     const [content, setContent] = useState("");
 
     useEffect(() => {
@@ -43,4 +43,4 @@ const HomeScreen = () => {
                 );
 };
 
-export default HomeScreen;
+export default Home;

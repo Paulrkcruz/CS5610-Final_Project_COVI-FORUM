@@ -11,6 +11,7 @@ import BoardAdmin from "./models/admin";
 import AddBoards from "./components/add-boards";
 import Boards from "./components/boards.component";
 import BoardsList from "./components/boards.list";
+import Home from "./models/home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -50,11 +51,8 @@ const App = () => {
                 Boards
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to={"/add"} className="nav-link">
-                Post
-              </Link>
-            </li>
+
+
             <Link to={"/covidStats"} className="nav-link">
               Covid-19 Stats
             </Link>
@@ -85,31 +83,24 @@ const App = () => {
           </div>
 
           {currentUser ? (
-
-              <div className="navbar-right">
-                <div className="navbar-nav">
-
+                  <div className="navbar-nav">
+                  <li className="navbar-left">
+                    <Link to={"/add"} className="nav-link">
+                      Post
+                    </Link>
+                  </li>
                   <li className="nav-item">
-
-
                     <Link to={"/profile"} className="nav-link">
                       Welcome, {currentUser.username}
                     </Link>
-
                   </li>
-                  <Link to={"/user"} className="nav-link">
-                    Settings
-                  </Link>
                   <li className="nav-item">
                     <a href="/login" className="nav-link" onClick={logOut}>
                       LogOut
                     </a>
                   </li></div>
-
-              </div>
-
-
           ) : (
+
 
               <div className="navbar-nav ml-auto">
                 <li className="nav-item">
@@ -130,7 +121,7 @@ const App = () => {
 
         <div className="container mt-3">
           <Switch>
-            <Route exact path={["/home", "/home"]} component={Boards} />
+            <Route exact path={["/home", "/home"]} component={Home} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/profile" component={Profile} />
@@ -141,8 +132,6 @@ const App = () => {
             <Route exact path="/add" component={AddBoards} />
             <Route path="/boards/:id" component={Boards} />
             <Route path="/covidStats" component={CovidStats} />
-
-
           </Switch>
 
 

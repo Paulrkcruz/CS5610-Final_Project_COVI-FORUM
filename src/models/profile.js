@@ -8,11 +8,17 @@ const Profile = () => {
     <div className="navbar-right">
       <header className="jumbotron">
         <h3>
-          <strong>{currentUser.username}</strong> Profile
+          <h3>{currentUser.username}</h3> Profile
         </h3>
       </header>
+        <p>
+            <strong>Account Status:</strong> Active
+        </p>
+        <p>
+            <strong>Member Since:</strong> 2021
+        </p>
       <p>
-        <strong>Token:</strong> {currentUser.accessToken.substring(0, 20)} ...{" "}
+        <strong>Web Token:</strong> {currentUser.accessToken.substring(0, 20)} ...{" "}
         {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
       </p>
       <p>
@@ -21,10 +27,10 @@ const Profile = () => {
       <p>
         <strong>Email:</strong> {currentUser.email}
       </p>
-      <strong>Authorities:</strong>
+      <strong>User Role:</strong>
       <ul>
         {currentUser.roles &&
-          currentUser.roles.map((role, index) => <li key={index}>{role}</li>)}
+          currentUser.roles.map((role, index) => <li key={index}>{role}</li>)} ROLE_USER
       </ul>
     </div>
   );

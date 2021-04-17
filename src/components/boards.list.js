@@ -22,11 +22,12 @@ export default class BoardsList extends Component {
 
       page: 1,
       count: 0,
-      pageSize: 11,
+      pageSize: 10,
     };
 
-    this.pageSizes = [3, 6, 9, 11];
+    this.pageSizes = [3, 6, 9, 10];
   }
+
 
   componentDidMount() {
     this.retrieveBoards();
@@ -126,6 +127,7 @@ export default class BoardsList extends Component {
     );
   }
 
+
   render() {
     const {
       searchTitle,
@@ -211,32 +213,35 @@ export default class BoardsList extends Component {
         <div className="col-md-6">
           {currentBoards ? (
             <div>
-              <h4>Boards</h4>
+              <h4></h4>
               <div>
                 <label>
-                  <strong>Title:</strong>
+                  <label><b>Title:</b></label>
                 </label>{" "}
-                {currentBoards.title}
+               <h3> {currentBoards.title}</h3>
               </div>
               <div>
                 <label>
-                  <strong>Story:</strong>
+                  <label><b>Post:</b></label>
                 </label>{" "}
-                {currentBoards.description}
+               <h3> {currentBoards.description}</h3>
               </div>
               <div>
                 <label>
                   <strong>Status:</strong>
                 </label>{" "}
-                {currentBoards.published ? "Published" : "Pending"}
+               <i> {currentBoards.published ? "Published" : "Pending"}</i>
               </div>
               <div className="alert-link">
+
+
               <Link
                 to={"/boards/" + currentBoards.id}
-                className="badge badge-warning"
-              >
+                className="badge badge-warning">
                 Edit
               </Link>
+
+
               </div>
               </div>
           ) : (
