@@ -4,7 +4,10 @@
   "description": "",
   "main": "app/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server-backend/app/server.js"
+  },
+  "engines": {
+    "node": "12.14.1"
   },
   "keywords": [
     "react",
