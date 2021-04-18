@@ -1,7 +1,8 @@
-import React, {Component, useState} from "react";
+import React, {Component, useEffect, useState} from "react";
 import BoardsDataService from "../services/boards.service";
 import { Link } from "react-router-dom";
 import Pagination from "@material-ui/lab/Pagination";
+import authService from "../services/auth.service";
 
 export default class BoardsList extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ export default class BoardsList extends Component {
 
     this.pageSizes = [3, 6, 9, 10];
   }
+
 
   componentDidMount() {
     this.retrieveBoards();
@@ -212,7 +214,8 @@ export default class BoardsList extends Component {
         <div className="col-md-6">
           {currentBoards ? (
             <div>
-              <h4></h4>
+              <label><b>User:</b></label>
+              <h4>{authService.getCurrentUser}</h4>
               <div>
                 <label>
                   <label><b>Title:</b></label>
