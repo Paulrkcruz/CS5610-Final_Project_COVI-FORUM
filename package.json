@@ -1,6 +1,7 @@
 {
   "name": "coviforum",
   "version": "1.1.1",
+  "private": true,
   "dependencies": {
     "4": "^0.0.0",
     "@fortawesome/fontawesome-free": "^5.15.3",
@@ -16,11 +17,11 @@
     "cors": "^2.8.5",
     "fontawesome": "^5.6.3",
     "form": "^0.2.4",
-    "google": "^2.1.0",
+    "google": "^0.6.0",
     "google-map-react": "^2.1.9",
     "leaflet": "^1.7.1",
     "map": "^1.0.1",
-    "material-ui": "^0.15.0",
+    "material-ui": "^0.20.2",
     "node.js": "^0.0.1-security",
     "papaparse": "^5.3.0",
     "react": "^16.0.0",
@@ -36,15 +37,13 @@
     "validator": "^13.0.0"
   },
   "scripts": {
-    "start": "npm run build",
-    "test": "npm run build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "engines": {
-    "node": "15.8.0"
   },
   "browserslist": {
     "production": [

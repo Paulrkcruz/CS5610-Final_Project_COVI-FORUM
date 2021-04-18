@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 const corsOptions = {
-  origin: "https://coviforum.herokuapp.com"
+  origin: "http://localhost:8081"
 };
 
 app.use(cors(corsOptions));
@@ -24,7 +24,7 @@ db.sequelize.sync();
 // force: true will drop the table if it already exists
 // db.sequelize.sync({force: true}).then(() => {
 //   console.log('Drop and Resync Database with { force: true }');
-//   initial();s
+//   initial();
 // });
 // server routing
 app.get("/", (req, res) => {
@@ -37,7 +37,7 @@ require('./routes/user.routes')(app);
 require("./routes/boards.routes")(app);
 
 // set port, listen for requests
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });

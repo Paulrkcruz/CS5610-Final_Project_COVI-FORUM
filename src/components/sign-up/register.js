@@ -70,19 +70,12 @@ const Register = (props) => {
         setPassword(password);
     };
 
-    const clearForm = () => {
-        document.getElementById("form").reset();
-        this.setState({
-            item: ""
-        })
-    };
-
     const handleRegister = (e) => {
         // form.current.validateAll();
         e.preventDefault();
         setMessage("Success! Your Account has been Created. Please Login!");
         setSuccessful(false);
-        this.clearForm()
+
 
         if (checkBtn.current.context._errors.length === 0) {
             AuthService.register(username, email, password).then(
@@ -97,9 +90,9 @@ const Register = (props) => {
                             error.response.data.message) ||
                         error.message ||
                         error.toString();
+
                     setMessage(resMessage);
                     setSuccessful(false);
-                    this.clearForm();
                 }
             );
         }

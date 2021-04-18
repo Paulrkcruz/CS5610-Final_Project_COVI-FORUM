@@ -1,8 +1,7 @@
-import React, {Component, useEffect, useState} from "react";
+import React, {Component, useState} from "react";
 import BoardsDataService from "../services/boards.service";
 import { Link } from "react-router-dom";
 import Pagination from "@material-ui/lab/Pagination";
-import AuthService from "../services/auth.service";
 
 export default class BoardsList extends Component {
   constructor(props) {
@@ -14,6 +13,7 @@ export default class BoardsList extends Component {
     this.removeAllBoards = this.removeAllBoards.bind(this);
     this.handlePageChange = this.handlePageChange.bind(this);
     this.handlePageSizeChange = this.handlePageSizeChange.bind(this);
+
     this.state = {
       boards: [],
       currentBoards: null,
@@ -27,7 +27,6 @@ export default class BoardsList extends Component {
 
     this.pageSizes = [3, 6, 9, 10];
   }
-
 
   componentDidMount() {
     this.retrieveBoards();
@@ -78,7 +77,6 @@ export default class BoardsList extends Component {
       });
   }
 
-
   refreshList() {
     this.retrieveBoards();
     this.setState({
@@ -127,7 +125,7 @@ export default class BoardsList extends Component {
       }
     );
   }
-  currentUser = AuthService.getCurrentUser();
+
 
   render() {
     const {
@@ -138,7 +136,6 @@ export default class BoardsList extends Component {
       page,
       count,
       pageSize,
-      currentUser,
     } = this.state;
 
     return (
@@ -215,8 +212,7 @@ export default class BoardsList extends Component {
         <div className="col-md-6">
           {currentBoards ? (
             <div>
-              <label><b>User:</b></label>
-              <h4>{currentUser.username}</h4>
+              <h4></h4>
               <div>
                 <label>
                   <label><b>Title:</b></label>
@@ -238,7 +234,6 @@ export default class BoardsList extends Component {
               <div className="alert-link">
 
 
-
               <Link
                 to={"/boards/" + currentBoards.id}
                 className="badge badge-warning">
@@ -248,20 +243,13 @@ export default class BoardsList extends Component {
 
               </div>
               </div>
-
-
           ) : (
-
-
-
               <div>
               <br />
             </div>
           )}
         </div>
       </div>
-
-
     );
   }
 }

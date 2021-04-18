@@ -106,10 +106,7 @@ export default class AddBoards extends Component {
             <div className="form-group">
               <label htmlFor="description">Your Story</label>
               <input
-                type="textarea"
-                placeholder="Whats on your mind?"
-                maxlength="250"
-                rows="7"
+                type="text"
                 className="form-control"
                 id="description"
                 required
