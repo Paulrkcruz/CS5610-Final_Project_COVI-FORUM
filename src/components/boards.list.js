@@ -77,7 +77,7 @@ export default class BoardsList extends Component {
         console.log(e);
       });
   }
-  currentUser = AuthService.getCurrentUser();
+
 
   refreshList() {
     this.retrieveBoards();
@@ -127,7 +127,7 @@ export default class BoardsList extends Component {
       }
     );
   }
-
+  currentUser = AuthService.getCurrentUser();
 
   render() {
     const {
@@ -138,6 +138,7 @@ export default class BoardsList extends Component {
       page,
       count,
       pageSize,
+      currentUser,
     } = this.state;
 
     return (
