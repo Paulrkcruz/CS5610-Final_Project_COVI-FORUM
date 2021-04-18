@@ -238,6 +238,7 @@ export default class BoardsList extends Component {
               <div className="alert-link">
 
 
+
               <Link
                 to={"/boards/" + currentBoards.id}
                 className="badge badge-warning">
@@ -247,13 +248,20 @@ export default class BoardsList extends Component {
 
               </div>
               </div>
+
+
           ) : (
+
+
+
               <div>
               <br />
             </div>
           )}
         </div>
       </div>
+
+
     );
   }
 }

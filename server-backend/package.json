@@ -4,7 +4,9 @@
   "description": "",
   "main": "app/server.js",
   "scripts": {
-    "heroku post-build": "node server-backend/app/server.js"
+    "start": "node server-backend/app/server.js",
+    "test": "node server-backend/app/server.js",
+    "eject": "node server-backend/app/server.js"
   },
   "engines": {
     "node": "15.8.0"
