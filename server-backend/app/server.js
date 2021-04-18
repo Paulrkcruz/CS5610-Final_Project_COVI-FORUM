@@ -10,6 +10,10 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+app.get('/boards/:id', cors(corsOptions), (req, res, next) => {
+  //...
+})
+
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
 
@@ -24,7 +28,7 @@ db.sequelize.sync();
 // force: true will drop the table if it already exists
 // db.sequelize.sync({force: true}).then(() => {
 //   console.log('Drop and Resync Database with { force: true }');
-//   initial();
+//   initial();s
 // });
 // server routing
 app.get("/", (req, res) => {
