@@ -78,7 +78,7 @@ export default class BoardsList extends Component {
       });
   }
   currentUser = AuthService.getCurrentUser();
-  
+
   refreshList() {
     this.retrieveBoards();
     this.setState({
