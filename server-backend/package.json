@@ -1,8 +1,8 @@
 {
   "name": "server-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "app/server.js",
+  "description": "Node JS Express Sequelize back-end for Coviforum",
+  "main": "server-backend/app/server.js",
   "scripts": {
     "start": "node server-backend/app/server.js",
     "test": "node server-backend/app/server.js",
