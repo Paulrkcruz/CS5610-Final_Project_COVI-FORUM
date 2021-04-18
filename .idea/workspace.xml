@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/1ab295168729c4e9dd9bb248ab1716d1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/336009c43109e97786091284ac43f83d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4de7ccc3c731cc63865e65c059f09b13.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/54e67c7b96f0d707828a73bcbfde61b4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5cab4edc8e0064941781120d694766d4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5f30f399378993b73af3abba790dbbfe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/710fdae3cd18d960f99f24b07f219c7a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/78050d06aa440fbedc2b0fe0e6e90a2d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/83b222d6490c7f5ac23e8f3060b825dd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/84f108084213f006dd46f1bd3d3e5258.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8cd4b13e3abe5cf13a72bb3c43a44951.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/8d4f2c8ba6bd104768f976b5ba5ef8c4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/bdb6771757702851a4e20ea15a971ecc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e161cdd581772c72b4b11289c0a97502.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/f3717276e79018627fa298152f1e06d4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +163,7 @@
       <workItem from="1617951184106" duration="32427000" />
       <workItem from="1618120270308" duration="22357000" />
       <workItem from="1618197248522" duration="13404000" />
-      <workItem from="1618695332619" duration="9963000" />
+      <workItem from="1618695332619" duration="11196000" />
     </task>
     <servers />
   </component>
