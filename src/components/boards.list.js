@@ -2,7 +2,7 @@ import React, {Component, useEffect, useState} from "react";
 import BoardsDataService from "../services/boards.service";
 import { Link } from "react-router-dom";
 import Pagination from "@material-ui/lab/Pagination";
-import authService from "../services/auth.service";
+import AuthService from "../services/auth.service";
 
 export default class BoardsList extends Component {
   constructor(props) {
@@ -14,7 +14,6 @@ export default class BoardsList extends Component {
     this.removeAllBoards = this.removeAllBoards.bind(this);
     this.handlePageChange = this.handlePageChange.bind(this);
     this.handlePageSizeChange = this.handlePageSizeChange.bind(this);
-
     this.state = {
       boards: [],
       currentBoards: null,
@@ -78,7 +77,8 @@ export default class BoardsList extends Component {
         console.log(e);
       });
   }
-
+  currentUser = AuthService.getCurrentUser();
+  
   refreshList() {
     this.retrieveBoards();
     this.setState({
@@ -215,7 +215,7 @@ export default class BoardsList extends Component {
           {currentBoards ? (
             <div>
               <label><b>User:</b></label>
-              <h4>{authService.getCurrentUser}</h4>
+              <h4>{currentUser.username}</h4>
               <div>
                 <label>
                   <label><b>Title:</b></label>

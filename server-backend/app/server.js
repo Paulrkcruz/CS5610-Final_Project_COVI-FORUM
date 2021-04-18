@@ -10,10 +10,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.get('/boards/:id', cors(corsOptions), (req, res, next) => {
-  //...
-})
-
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
 
