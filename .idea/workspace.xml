@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/http-client.env.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-up/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/http-common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/http-common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-backend/app/models/boards.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/models/boards.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/add-boards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-boards.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTTP Public Environment File" />
       </list>
     </option>
   </component>
@@ -97,6 +93,17 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoviforumApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="coviforum" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.coviforum.coviforum.CoviforumApplication" />
@@ -160,6 +167,7 @@
       <workItem from="1618120270308" duration="22357000" />
       <workItem from="1618197248522" duration="13404000" />
       <workItem from="1618695332619" duration="11731000" />
+      <workItem from="1618771513349" duration="1989000" />
     </task>
     <servers />
   </component>

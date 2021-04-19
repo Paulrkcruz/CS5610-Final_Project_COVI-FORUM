@@ -15,10 +15,10 @@ export default class AddBoards extends Component {
 
     this.state = {
       id: null,
+      userID: null,
       title: "",
       description: "", 
       published: false,
-
       submitted: false
     };
   }
@@ -44,11 +44,11 @@ export default class AddBoards extends Component {
     BoardsDataService.create(data)
       .then(response => {
         this.setState({
+          userID: response.data.userID,
           id: response.data.id,
           title: response.data.title,
           description: response.data.description,
           published: response.data.published,
-
           submitted: true
         });
         console.log(response.data);
@@ -60,6 +60,7 @@ export default class AddBoards extends Component {
 
   newBoards() {
     this.setState({
+      userID: null,
       id: null,
       title: "",
       description: "",
@@ -95,6 +96,7 @@ export default class AddBoards extends Component {
               <input
                 type="text"
                 className="form-control"
+                userID=""
                 id="title"
                 required
                 value={this.state.title}
