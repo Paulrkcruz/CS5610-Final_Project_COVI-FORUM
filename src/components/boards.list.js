@@ -39,7 +39,6 @@ export default class BoardsList extends Component {
       searchTitle: searchTitle,
     });
   }
-
   getRequestParams(searchTitle, page, pageSize) {
     let params = {};
 
