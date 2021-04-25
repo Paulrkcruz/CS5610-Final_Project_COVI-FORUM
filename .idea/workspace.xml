@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/controllers/boards.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/controllers/boards.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/models/boards.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/models/boards.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/routes/boards.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/routes/boards.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/routes/user.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add-boards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-boards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/boards.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/boards.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/boards.list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/boards.list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/boards.list_pub.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-up/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/boards.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/boards.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/boards.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/boards.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.js" afterDir="false" />
-    </list>
+    <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +167,7 @@
       <workItem from="1618771513349" duration="1989000" />
       <workItem from="1618874457510" duration="1140000" />
       <workItem from="1618934228309" duration="7195000" />
-      <workItem from="1619060625384" duration="10612000" />
+      <workItem from="1619060625384" duration="10823000" />
     </task>
     <servers />
   </component>
