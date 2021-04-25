@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AddBoards from "./../components/add-boards";
 import Boards from "./../components/boards.component";
-import BoardsList from "./../components/boards.list_pub";
+import BoardsList from "./../components/boards.list";
 import { Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 

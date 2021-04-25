@@ -64,7 +64,7 @@ export default class Boards extends Component {
   }
 
   updatePublished(status) {
-    var data = {
+    const data = {
       id: this.state.currentBoards.id,
       title: this.state.currentBoards.title,
       description: this.state.currentBoards.description,

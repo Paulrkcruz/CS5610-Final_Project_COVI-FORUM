@@ -211,7 +211,19 @@ export default class BoardsList extends Component {
         <div className="col-md-6">
           {currentBoards ? (
             <div>
-              <h4></h4>
+              <div>
+
+                <button type="button" className="btn no-outline btn-secondary">
+                  <i className="fa fa-thumbs-o-up fa-4 align-middle" aria-hidden="true"></i>
+                  &nbsp;
+                  <span className="align-middle">Like</span>
+                </button>
+                
+                <label>
+                </label>{" "}
+                <label><b>Username:</b></label>
+                <p> {currentBoards.username}</p>
+              </div>
               <div>
                 <label>
                   <label><b>Title:</b></label>
@@ -241,7 +253,17 @@ export default class BoardsList extends Component {
 
 
               </div>
+
+
+
+              <div className="card-footer text-muted">
+                <textarea className="form-control" placeholder="Write a comment..."></textarea>
+                <small>120 Remaining</small>
               </div>
+              </div>
+
+
+
           ) : (
               <div>
               <br />

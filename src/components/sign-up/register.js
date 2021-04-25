@@ -1,9 +1,12 @@
 import React, { useState, useRef } from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import isEmail from 'validator/lib/isEmail';
 import AuthService from "../../services/auth.service";
+import Popup from "reactjs-popup";
+import 'reactjs-popup/dist/index.css';
 
 const required = (value) => {
     if (!value) {
@@ -93,6 +96,7 @@ const Register = (props) => {
 
                     setMessage(resMessage);
                     setSuccessful(false);
+
                 }
             );
         }
@@ -161,23 +165,25 @@ const Register = (props) => {
                             <div className="form-group">
                                 <button className="btn btn-primary btn-block">Sign Up</button>
                             </div>
+
                         </div>
+
                     )}
 
                     {message && (
                         <div className="form-group">
-                            <div
-                                className={
-                                    successful ? "alert alert-success" : "alert alert-danger"
-                                }
-                                role="alert"
-                            >
-                                {message}
-                            </div>
-                        </div>
+                            <div>
+                            <Switch>
+                                <Redirect from="/register" to="/login" />
+                                <Route path="/login">
+                                </Route>
+                            </Switch>
+                            </div></div>
                     )}
+
                     <CheckButton style={{ display: "none" }} ref={checkBtn} />
                 </Form>
+]]
             </div>
         </div>
     );

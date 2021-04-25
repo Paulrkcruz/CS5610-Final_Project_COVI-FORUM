@@ -1,7 +1,7 @@
 module.exports = app => {
   const boards = require("../controllers/boards.controller.js");
 
-  var router = require("express").Router();
+  const router = require("express").Router();
 
   // Create a new Boards
   router.post("/", boards.create);
@@ -14,6 +14,9 @@ module.exports = app => {
 
   // Retrieve a single Boards with id
   router.get("/:id", boards.findOneBoards);
+
+  // Retrieve a single Boards post by username
+  router.get("/:username", boards.findBoardByUserName);
 
   // Update a Boards with id
   router.put("/:id", boards.update);

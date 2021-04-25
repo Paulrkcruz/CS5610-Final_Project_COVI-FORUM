@@ -50,7 +50,7 @@ exports.create = (req, res) => {
 // Retrieve all Boards from the database.
 exports.findAllBoards = (req, res) => {
   const { page, size, title } = req.query;
-  var condition = title ? { title: { [Op.like]: `%${title}%` } } : null;
+  const condition = title ? {title: {[Op.like]: `%${title}%`}} : null;
 
   const { limit, offset } = getPagination(page, size);
 
@@ -82,6 +82,20 @@ exports.findOneBoards = (req, res) => {
     });
 };
 
+// Find a single Boards with an id
+exports.findBoardByUserName = (req, res) => {
+  const username = req.params.username;
+
+  Boards.findByPk(username)
+      .then(data => {
+        res.send(data);
+      })
+      .catch(err => {
+        res.status(500).send({
+          message: "Error retrieving Boards with username=" + username
+        });
+      });
+};
 // Update a Boards by the id in the request
 exports.update = (req, res) => {
   const id = req.params.id;

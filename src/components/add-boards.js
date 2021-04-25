@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, {Component, useEffect, useState} from "react";
 import BoardsDataService from "../services/boards.service";
 import {Route, Switch} from "react-router-dom";
 import { Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button';
 import BoardsList from "./boards.list";
+import AuthService from "../services/auth.service";
 
 export default class AddBoards extends Component {
   constructor(props) {
@@ -14,12 +15,14 @@ export default class AddBoards extends Component {
     this.newBoards = this.newBoards.bind(this);
 
     this.state = {
+      username: "",
       id: null,
       title: "",
       description: "", 
       published: false,
       submitted: false
     };
+
   }
 
   onChangeTitle(e) {
@@ -35,7 +38,9 @@ export default class AddBoards extends Component {
   }
 
   saveBoards() {
-    var data = {
+    const data = {
+
+      username: this.getCurrentUser(),
       title: this.state.title,
       description: this.state.description
     };
@@ -43,6 +48,7 @@ export default class AddBoards extends Component {
     BoardsDataService.create(data)
       .then(response => {
         this.setState({
+          username: response.data.username,
           id: response.data.id,
           title: response.data.title,
           description: response.data.description,
@@ -58,6 +64,7 @@ export default class AddBoards extends Component {
 
   newBoards() {
     this.setState({
+      username: "",
       id: null,
       title: "",
       description: "",
@@ -93,6 +100,7 @@ export default class AddBoards extends Component {
               <input
                 type="text"
                 className="form-control"
+                username={this.state.username}
                 id="title"
                 required
                 value={this.state.title}
@@ -106,6 +114,7 @@ export default class AddBoards extends Component {
               <input
                 type="text"
                 className="form-control"
+                username={this.state.username}
                 id="description"
                 required
                 value={this.state.description}

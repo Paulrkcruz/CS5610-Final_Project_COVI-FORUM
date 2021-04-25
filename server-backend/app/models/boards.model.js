@@ -1,7 +1,7 @@
 module.exports = (sequelize, Sequelize) => {
   const Boards = sequelize.define("boards", {
-    userID: {
-      type: Sequelize.INTEGER
+    username: {
+      type: Sequelize.STRING
     },
     title: {
       type: Sequelize.STRING
@@ -13,6 +13,5 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.BOOLEAN
     }
   });
-
   return Boards;
 };

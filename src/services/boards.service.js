@@ -9,6 +9,10 @@ class BoardsDataService {
     return http.get(`/boards/${id}`);
   }
 
+  findBoardsByUserName(username) {
+    return http.get(`/boards/${username}`);
+  }
+
   create(data) {
     return http.post("/boards", data);
   }
