@@ -40,7 +40,7 @@ export default class AddBoards extends Component {
   saveBoards() {
     const data = {
 
-      username: this.getCurrentUser(),
+      username: this.state.username,
       title: this.state.title,
       description: this.state.description
     };

@@ -218,7 +218,7 @@ export default class BoardsList extends Component {
                   &nbsp;
                   <span className="align-middle">Like</span>
                 </button>
-                
+
                 <label>
                 </label>{" "}
                 <label><b>Username:</b></label>
