@@ -29,6 +29,7 @@ exports.create = (req, res) => {
 
   // Create a Boards
   const boards = {
+    username: req.body.username,
     title: req.body.title,
     description: req.body.description,
     published: req.body.published ? req.body.published : false
@@ -99,12 +100,12 @@ exports.findBoardByUserName = (req, res) => {
 // Update a Boards by the id in the request
 exports.update = (req, res) => {
   const id = req.params.id;
-
   Boards.update(req.body, {
     where: { id: id }
+
   })
     .then(num => {
-      if (num == 1) {
+      if (num === 1) {
         res.send({
           message: "Boards was updated successfully."
         });
@@ -129,7 +130,7 @@ exports.delete = (req, res) => {
     where: { id: id }
   })
     .then(num => {
-      if (num == 1) {
+      if (num === 1) {
         res.send({
           message: "Boards was deleted successfully!"
         });

@@ -15,17 +15,17 @@ const Profile = () => {
             <strong>Account Status:</strong> Active
         </p>
         <p>
-            <strong>Member Since:</strong> 2021
+            <strong>Member Since:</strong> {currentUser.createdAt}
         </p>
       <p>
         <strong>Web Token:</strong> {currentUser.accessToken.substring(0, 20)} ...{" "}
         {currentUser.accessToken.substr(currentUser.accessToken.length - 20)}
       </p>
       <p>
-        <strong>Id:</strong> {currentUser.id}
+        <strong>User ID:</strong> {currentUser.id}
       </p>
       <p>
-        <strong>Email:</strong> {currentUser.email}
+        <strong>Email Address:</strong> {currentUser.email}
       </p>
       <strong>User Role:</strong>
       <ul>

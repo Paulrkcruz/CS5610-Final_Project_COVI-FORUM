@@ -9,8 +9,7 @@ import AuthService from "../services/auth.service";
 export default class AddBoards extends Component {
   constructor(props) {
     super(props);
-    this.onChangeTitle = this.onChangeTitle.bind(this);
-    this.onChangeDescription = this.onChangeDescription.bind(this);
+    this.onChangeTitle = this.oncs.onChangeDescription.bind(this);
     this.saveBoards = this.saveBoards.bind(this);
     this.newBoards = this.newBoards.bind(this);
 
@@ -39,16 +38,16 @@ export default class AddBoards extends Component {
 
   saveBoards() {
     const data = {
-
-      username: this.state.username,
+      username: this.username,
       title: this.state.title,
       description: this.state.description
     };
 
     BoardsDataService.create(data)
       .then(response => {
+        const user = AuthService.getCurrentUser();
         this.setState({
-          username: response.data.username,
+          username: user,
           id: response.data.id,
           title: response.data.title,
           description: response.data.description,
@@ -100,7 +99,7 @@ export default class AddBoards extends Component {
               <input
                 type="text"
                 className="form-control"
-                username={this.state.username}
+                username={AuthService.getCurrentUser()}
                 id="title"
                 required
                 value={this.state.title}
@@ -114,7 +113,7 @@ export default class AddBoards extends Component {
               <input
                 type="text"
                 className="form-control"
-                username={this.state.username}
+                username={AuthService.getCurrentUser()}
                 id="description"
                 required
                 value={this.state.description}

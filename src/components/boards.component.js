@@ -13,6 +13,7 @@ export default class Boards extends Component {
 
     this.state = {
       currentBoards: {
+        username: "",
         id: null,
         title: "",
         description: "",
@@ -65,6 +66,7 @@ export default class Boards extends Component {
 
   updatePublished(status) {
     const data = {
+      username: this.state.currentBoards.username,
       id: this.state.currentBoards.id,
       title: this.state.currentBoards.title,
       description: this.state.currentBoards.description,
@@ -186,7 +188,6 @@ export default class Boards extends Component {
         ) : (
           <div>
             <br />
-            <p>Please Select A Board</p>
           </div>
         )}
       </div>
