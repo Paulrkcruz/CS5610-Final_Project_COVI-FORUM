@@ -90,6 +90,7 @@ export default class Boards extends Component {
 
   updateBoards() {
     BoardsDataService.update(
+        this.state.currentBoards.username,
       this.state.currentBoards.id,
       this.state.currentBoards
     )

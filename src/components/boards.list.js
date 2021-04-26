@@ -213,11 +213,7 @@ export default class BoardsList extends Component {
             <div>
               <div>
 
-                <button type="button" className="btn no-outline btn-secondary">
-                  <i className="fa fa-thumbs-o-up fa-4 align-middle" aria-hidden="true"></i>
-                  &nbsp;
-                  <span className="align-middle">Like</span>
-                </button>
+
 
                 <label>
                 </label>{" "}

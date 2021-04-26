@@ -5,7 +5,6 @@ import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import isEmail from 'validator/lib/isEmail';
 import AuthService from "../../services/auth.service";
-import Popup from "reactjs-popup";
 import 'reactjs-popup/dist/index.css';
 
 const required = (value) => {
@@ -51,7 +50,6 @@ const vpassword = (value) => {
 const Register = (props) => {
     const form = useRef();
     const checkBtn = useRef();
-
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -104,7 +102,9 @@ const Register = (props) => {
 
     return (
         <div className="col-md-12">
+
             <div className="card card-container">
+                <h3>Registration</h3>
                 <img
                     src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
                     alt="profile-img"
@@ -151,12 +151,12 @@ const Register = (props) => {
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="password">Re-enter Password</label>
+                                <label htmlFor="cpassword">Re-enter Password</label>
                                 <Input
                                     type="password"
                                     className="form-control"
-                                    name="password"
-                                    value={password}
+                                    name="cpassword"
+
                                     onChange={onChangePassword}
                                     validations={[required, vpassword]}
                                 />
@@ -173,17 +173,16 @@ const Register = (props) => {
                     {message && (
                         <div className="form-group">
                             <div>
-                            <Switch>
-                                <Redirect from="/register" to="/login" />
-                                <Route path="/login">
-                                </Route>
-                            </Switch>
+                                <Switch>
+                                    <Redirect from="/register" to="/login" />
+                                    <Route path="/login">
+                                    </Route>
+                                </Switch>
                             </div></div>
                     )}
 
                     <CheckButton style={{ display: "none" }} ref={checkBtn} />
                 </Form>
-]]
             </div>
         </div>
     );

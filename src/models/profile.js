@@ -15,7 +15,7 @@ const Profile = () => {
             <strong>Account Status:</strong> Active
         </p>
         <p>
-            <strong>Member Since:</strong> {currentUser.createdAt}
+            <strong>Member Since:</strong> 2021{currentUser.createdAt}
         </p>
       <p>
         <strong>Web Token:</strong> {currentUser.accessToken.substring(0, 20)} ...{" "}

@@ -2,8 +2,9 @@ import React, { useState, useRef } from "react";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
-
 import AuthService from "../../services/auth.service";
+import {Redirect, Route, Switch} from "react-router-dom";
+import Home from "../../models/home";
 
 const required = (value) => {
   if (!value) {
@@ -55,7 +56,6 @@ const Login = (props) => {
               error.response.data.message) ||
             error.message ||
             error.toString();
-
           setLoading(false);
           setMessage(resMessage);
         }
@@ -66,13 +66,15 @@ const Login = (props) => {
   };
 
   return (
+
     <div className="col-md-12">
+
       <div className="card card-container">
+        <h3>Login</h3>
         <img
           src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
           alt="profile-img"
-          className="profile-img-card"
-        />
+          className="profile-img-card"/>
 
         <Form onSubmit={handleLogin} ref={form}>
           <div className="form-group">
@@ -83,8 +85,7 @@ const Login = (props) => {
               name="username"
               value={username}
               onChange={onChangeUsername}
-              validations={[required]}
-            />
+              validations={[required]}/>
           </div>
 
           <div className="form-group">
@@ -95,32 +96,37 @@ const Login = (props) => {
               name="password"
               value={password}
               onChange={onChangePassword}
-              validations={[required]}
-            />
+              validations={[required]}/>
           </div>
 
           <div className="form-group">
             <br></br>
             <button className="btn btn-primary btn-block" disabled={loading}>
               {loading && (
-                <span className="spinner-border spinner-border-sm"></span>
+                <span className="spinner-border spinner-border-sm"/>
+
               )}
               <span>Login</span>
             </button>
-          </div>
 
+
+          </div>
           {message && (
-            <div className="form-group">
-              <div className="alert alert-danger" role="alert">
-                {message}
-              </div>
-            </div>
+              <div className="form-group">
+                <div>
+                  <Switch>
+                    <Redirect to="/home" />
+                    <Route exact path={["/home", "/home"]} component={Home} />
+                  </Switch>
+                </div></div>
           )}
+
           <CheckButton style={{ display: "none" }} ref={checkBtn} />
         </Form>
+
       </div>
+
     </div>
   );
 };
-
 export default Login;

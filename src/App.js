@@ -8,6 +8,7 @@ import Profile from "./models/profile";
 import BoardUser from "./models/user";
 import BoardModerator from "./models/moderator";
 import BoardAdmin from "./models/admin";
+import PubBoards from "./components/pub-boards";
 import AddBoards from "./components/add-boards";
 import Boards from "./components/boards.component";
 import BoardsList from "./components/boards.list";
@@ -37,7 +38,7 @@ const App = () => {
   return (
       <div>
         <nav className="navbar navbar-icon-top navbar-expand-sm navbar-black bg-light">
-          <Link to={"/"} className="navbar-brand">
+          <Link to={"/pubBoards"} className="navbar-brand">
             <a className="navbar-brand">
               <img src="././coviforum_icon.png" alt="logo" height={35} width={35} />
 
@@ -47,9 +48,7 @@ const App = () => {
           </Link>
           <div className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <Link to={"/boards"} className="nav-link">
-                Boards
-              </Link>
+
             </li>
 
 
@@ -83,7 +82,17 @@ const App = () => {
           </div>
 
           {currentUser ? (
+
                   <div className="navbar-nav">
+
+                      <Link to={"/home"} className="nav-link">
+                        Home
+                      </Link>
+
+                    <Link to={"/boards"} className="nav-link">
+                      Boards
+                    </Link>
+
                   <li className="navbar-left">
                     <Link to={"/add"} className="nav-link">
                       Post
@@ -128,6 +137,7 @@ const App = () => {
             <Route path="/user" component={BoardUser} />
             <Route path="/mod" component={BoardModerator} />
             <Route path="/admin" component={BoardAdmin} />
+            <Route path="/pubBoards" component={PubBoards} />
             <Route exact path={["/", "/boards"]} component={BoardsList} />
             <Route exact path="/add" component={AddBoards} />
             <Route path="/boards/:id" component={Boards} />

@@ -2,6 +2,7 @@ const db = require("../models");
 const Boards = db.boards;
 const Op = db.Sequelize.Op;
 
+
 const getPagination = (page, size) => {
   const limit = size ? +size : 3;
   const offset = page ? page * limit : 0;
@@ -71,7 +72,6 @@ exports.findAllBoards = (req, res) => {
 // Find a single Boards with an id
 exports.findOneBoards = (req, res) => {
   const id = req.params.id;
-
   Boards.findByPk(id)
     .then(data => {
       res.send(data);
@@ -83,20 +83,31 @@ exports.findOneBoards = (req, res) => {
     });
 };
 
-// Find a single Boards with an id
-exports.findBoardByUserName = (req, res) => {
-  const username = req.params.username;
-
-  Boards.findByPk(username)
-      .then(data => {
-        res.send(data);
+// Find Boards by Username
+exports.findBoardByUserName = () => {
+  BoardsDataService.findBoardByUserName(currentUser.username)
+      .then(response => {
+        console.log(response.data);
       })
-      .catch(err => {
-        res.status(500).send({
-          message: "Error retrieving Boards with username=" + username
-        });
+      .catch(e => {
+        console.log(e);
       });
 };
+
+// find blogs belonging to one user or all blogs
+exports.findBoardByUserName = (req, res) => {
+  let query;
+  if(req.params.username) {
+    query = Boards.findAll({ include: [
+        { model: Boards, where: { username: req.params.username } },
+      ]})
+  } else {
+    query = Boards.findAll({ include: [Boards]})
+  }
+  return query.then(blogs => res.json(blogs))
+}
+
+
 // Update a Boards by the id in the request
 exports.update = (req, res) => {
   const id = req.params.id;

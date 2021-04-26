@@ -1,5 +1,5 @@
 exports.allAccess = (req, res) => {
-  res.status(200).send("Welcome to CoviForum!");
+  res.status(200).send("Welcome to CoviForum");
 };
 
 exports.userBoard = (req, res) => {
