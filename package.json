@@ -35,6 +35,7 @@
     "react-validation": "^3.0.7",
     "react-validator": "^0.1.0",
     "reactjs-popup": "^2.0.4",
+    "sequelize-cli": "^6.2.0",
     "validator": "^13.0.0"
   },
   "scripts": {
