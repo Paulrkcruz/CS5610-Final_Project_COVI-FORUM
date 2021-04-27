@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-backend/app/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +170,7 @@
       <workItem from="1618771513349" duration="1989000" />
       <workItem from="1618874457510" duration="1140000" />
       <workItem from="1618934228309" duration="7195000" />
-      <workItem from="1619060625384" duration="46488000" />
+      <workItem from="1619060625384" duration="46565000" />
     </task>
     <servers />
   </component>
