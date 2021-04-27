@@ -1,0 +1,15 @@
+{
+  "development": {
+    "database": "heroku_d12c9954cf94e81",
+    "host": "us-cdbr-east-03.cleardb.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "database": "heroku_d12c9954cf94e81",
+    "host": "us-cdbr-east-03.cleardb.com",
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "mysql://adffdadf2341:adf4234@us-cdbr-east.cleardb.com/heroku_db?reconnect=true"
+  }
+}

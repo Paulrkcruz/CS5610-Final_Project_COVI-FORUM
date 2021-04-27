@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/pub-boards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-backend/app/config/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/controllers/boards.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/controllers/boards.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-backend/app/routes/boards.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/routes/boards.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/add-boards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/add-boards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/boards.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/boards.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/boards.list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/boards.list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-in/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sign-up/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/boards.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/boards.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/http-common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/http-common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +97,7 @@
       <recent name="$PROJECT_DIR$/src/components/sign-in" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/server-backend/app" />
     </key>
   </component>
@@ -185,7 +181,7 @@
       <workItem from="1618771513349" duration="1989000" />
       <workItem from="1618874457510" duration="1140000" />
       <workItem from="1618934228309" duration="7195000" />
-      <workItem from="1619060625384" duration="42017000" />
+      <workItem from="1619060625384" duration="44949000" />
     </task>
     <servers />
   </component>
