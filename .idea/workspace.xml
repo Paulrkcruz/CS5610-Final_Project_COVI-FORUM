@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3202425f-0fbf-4ee2-98a3-520e2714d32d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server-backend/app/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-backend/app/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,19 +92,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CoviforumApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="coviforum" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.coviforum.coviforum.CoviforumApplication" />
@@ -171,6 +159,7 @@
       <workItem from="1618874457510" duration="1140000" />
       <workItem from="1618934228309" duration="7195000" />
       <workItem from="1619060625384" duration="46565000" />
+      <workItem from="1619492294878" duration="12000" />
     </task>
     <servers />
   </component>

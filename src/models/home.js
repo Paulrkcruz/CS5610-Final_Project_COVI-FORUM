@@ -148,7 +148,7 @@ export default class Home extends Component {
                 <div className="-hacker-news-square">
                     <header className="jumbotron">
                         <h3>
-                            <h3>Welcome to Coviforum, {currentUser.username}</h3>
+                            <h3>Welcome to Coviforum</h3>
                         </h3>
                         <i>Coviforum is a Discussion Board to speak of the struggles of the COVID-19 Pandemic</i>
                     </header>&nbsp;
