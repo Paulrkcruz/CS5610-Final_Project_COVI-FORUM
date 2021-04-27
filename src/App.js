@@ -12,6 +12,7 @@ import PubBoards from "./components/pub-boards";
 import AddBoards from "./components/add-boards";
 import Boards from "./components/boards.component";
 import BoardsList from "./components/boards.list";
+import Details from "./components/details-screen";
 import Home from "./models/home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -56,7 +57,9 @@ const App = () => {
             <Link to={"/covidStats"} className="nav-link">
               Covid-19 Stats
             </Link>
-
+            <Link to={"/details"} className="nav-link">
+              Details
+            </Link>
 
             {showModeratorBoard && (
                 <li className="nav-item">
@@ -143,6 +146,7 @@ const App = () => {
             <Route exact path="/add" component={AddBoards} />
             <Route path="/boards/:id" component={Boards} />
             <Route path="/covidStats" component={CovidStats} />
+            <Route path="/details" component={Details} />
           </Switch>
 
 
