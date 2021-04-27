@@ -161,25 +161,25 @@ export default class Home extends Component {
                     <p>View the Boards:
 
                         <Link to="/boards">&nbsp;
-                            Post
+                            View The Boards
                         </Link></p>
 
                     <p>Post A New Discussion Board:
 
                         <Link to="/add">&nbsp;
-                            Post
+                            Post A New Discussion
                         </Link></p>
 
                     <p>View Profile:
 
                         <Link to="/profile">&nbsp;
-                            Profile
+                            My Profile
                         </Link></p>
 
                     <p>Learn about COVID-19:
 
                         <Link to="/covidstats">&nbsp;
-                            Covid Stats
+                            Covid-19 Stats
                         </Link></p>
 
                     <b><i>Preview of todays boards:</i></b>
